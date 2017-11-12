@@ -1,0 +1,31 @@
+@import '../base/all';
+
+.button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 9px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    @include border-radius(3px);
+    @include transition(background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out);
+
+    &--primary {
+        background-color: $blue-light;
+        color: #fff;
+        @include box-shadow(0 8px 35px 0 rgba(0,0,0,.4));
+        @include transition(all .15s ease-in);
+        &:hover {
+            background-color: darken($blue-light, 5%);
+            @include box-shadow(0 0 5px 0 rgba(0,0,0,.2));
+        }
+    }
+}

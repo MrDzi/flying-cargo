@@ -12,7 +12,8 @@
 
         <link rel="stylesheet" href="assets/css/vendor/normalize.css">
         <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/main.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/materialdesignicons.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
 
         <script type="text/javascript" src="assets/js/vendor/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="assets/js/vendor/popper.js"></script>
@@ -24,16 +25,19 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <header>
+        <header class="main-header">
             <div class="container">
-                <a href="#">
-                    <img src="assets/img/fc-logo.jpg" alt="FlyingCargo logo">
-                </a>
-                <div class="language-dropdown">
-                    <ul>
-                        <li>SR</li>
-                        <li>EN</li>
-                    </ul>
+                <div class="row justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/fc-logo.jpg" alt="FlyingCargo logo"></a>
+                    </div>
+                    <div class="dropdown dropdown--language">
+                        <span class="dropdown-toggle dropdown-toggle--language" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SR</span>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">SR</a>
+                            <a class="dropdown-item" href="#">EN</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -41,14 +45,27 @@
         <!-- Hero section START -->
         <section class="section section--hero">
             <div class="container">
-                <div class="tracking-block">
-                    <h3>Lorem ipsum</h3>
-                    <textarea id="trackingNumbers" name="trackingNumbers"></textarea>
-                    <button>Track</button>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="tracking-block">
+                            <h3>Track shipment</h3>
+                            <textarea id="trackingNumbers" name="trackingNumbers" placeholder="Enter tracking number(s)"></textarea>
+                            <div class="row justify-content-between align-items-center mt-2">
+                                <div class="col-6 tracking-block__info">
+                                    Track up to 10 numbers at a time. Separate with a comma or Enter.
+                                </div>
+                                <div class="col-6">
+                                    <button class="button button--primary">Track</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="moto">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</span>
+                        <div>
+                    </div>
                 </div>
-                <div class="moto">
-                    <span>Lorem ipsum</span>
-                <div>
             </div>
         </section>
         <!-- Hero section START -->
@@ -56,34 +73,42 @@
         <!-- Content section START -->
         <section class="section section--content">
             <div class="container">
-                <div class="row">
+                <div class="row info-blocks-wrapper">
 
                     <div class="col-md-4">
                         <div class="info-block info-block--links">
-                            <h2>Quick links</h2>
-                            <ul class="links-list">
-                                <li>
-                                    <a href="#">
-                                        <span class="links-list__icon"></span>
-                                        <span>Chat live with our support</span>
+                            <h3>Quick links</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="links-list__icon d-flex align-items-center justify-content-center">
+                                            <i class="mdi mdi-forum"></i>
+                                        </span>
+                                        <span class="links-list__text">Chat live with our support</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="links-list__icon"></span>
-                                        <span>Chat live with our support</span>
+                                <li class="mb-2">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="links-list__icon d-flex align-items-center justify-content-center">
+                                            <i class="mdi mdi-forum"></i>
+                                        </span>
+                                        <span class="links-list__text">Chat live with our support</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="links-list__icon"></span>
-                                        <span>Chat live with our support</span>
+                                <li class="mb-2">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="links-list__icon d-flex align-items-center justify-content-center">
+                                            <i class="mdi mdi-forum"></i>
+                                        </span>
+                                        <span class="links-list__text">Chat live with our support</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="links-list__icon"></span>
-                                        <span>Chat live with our support</span>
+                                <li class="mb-2">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="links-list__icon d-flex align-items-center justify-content-center">
+                                            <i class="mdi mdi-forum"></i>
+                                        </span>
+                                        <span class="links-list__text">Chat live with our support</span>
                                     </a>
                                 </li>
                             </ul>
@@ -92,49 +117,76 @@
 
                     <div class="col-md-4">
                         <div class="info-block info-block--news">
-                            <h2>News</h2>
-                            <ul class="news-list">
-                                <li>
+                            <h3>News</h3>
+                            <ul class="news-list list-unstyled">
+                                <li class="mb-2">
                                     <article class="news-list__article">
-                                        <a href="#">
-                                            <img src="" alt="">
+                                        <a href="#" class="d-flex">
+                                            <img src="http://lorempixel.com/110/74" alt="">
                                             <div class="news-list__article-content">
-                                                <h3>Test headline</h3>
+                                                <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
+                                                <span class="news-list__article-date">11.11.2017.</span>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </li>
+                                <li class="mb-2">
+                                    <article class="news-list__article">
+                                        <a href="#" class="d-flex">
+                                            <img src="http://lorempixel.com/110/74" alt="">
+                                            <div class="news-list__article-content">
+                                                <h4>From Engines to Tail Lights, FedEx Technicians’ Knowledge On Display</h4>
+                                                <span class="news-list__article-date">11.11.2017.</span>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </li>
+                                <li class="mb-2">
+                                    <article class="news-list__article">
+                                        <a href="#" class="d-flex">
+                                            <img src="http://lorempixel.com/110/74" alt="">
+                                            <div class="news-list__article-content">
+                                                <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
                                                 <span class="news-list__article-date">11.11.2017.</span>
                                             </div>
                                         </a>
                                     </article>
                                 </li>
                             </ul>
-                            <a href="#">All news</a>
+                            <div class="text-right pt-2">
+                                <a href="#" class="color-yellow">All news <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="info-block info-block--contact">
-                            <h2>News</h2>
+                            <h3>Contact</h3>
                             <div class="info-block__content">
-                                <h3>Flying Cargo YU doo</h3>
-                                <ul class="contact-list">
-                                    <li>
-                                        <span class="small-icon"></span>
+                                <h4>Flying Cargo YU doo</h4>
+                                <ul class="contact-list list-unstyled">
+                                    <li class="d-flex align-items-center">
+                                        <i class="mdi mdi-map-marker small-icon mr-2"></i>
                                         <span>Autoput 22, 11000 Beograd</span>
                                     </li>
-                                    <li>
-                                        <span class="small-icon"></span>
-                                        <span>Autoput 22, 11000 Beograd</span>
+                                    <li class="d-flex align-items-center">
+                                        <i class="mdi mdi-phone small-icon mr-2"></i>
+                                        <span>+381 11 3109 400</span>
                                     </li>
-                                    <li>
-                                        <span class="small-icon"></span>
-                                        <span>Autoput 22, 11000 Beograd</span>
+                                    <li class="d-flex align-items-center">
+                                        <i class="mdi mdi-fax small-icon mr-2"></i>
+                                        <span>+381 11 3109 444</span>
                                     </li>
-                                    <li>
-                                        <span class="small-icon"></span>
-                                        <span>Autoput 22, 11000 Beograd</span>
+                                    <li class="d-flex align-items-center">
+                                        <i class="mdi mdi-email small-icon mr-2"></i>
+                                        <span>csa@flying-cargo.rs</span>
                                     </li>
-                                    <li>
-                                        <span class="small-icon"></span>
-                                        <span>Autoput 22, 11000 Beograd</span>
+                                    <li class="d-flex align-items-top">
+                                        <i class="mdi mdi-clock small-icon mr-2"></i>
+                                        <span class="mt-1">Mon - Fri: 08:00 to 19:00</br>
+                                            Sat: 08:00 to 14:00</br>
+                                            Closed on Sundays and public holidays
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
@@ -152,25 +204,22 @@
         </section>
         <!-- Map section END -->
 
-        <footer>
+        <footer class="main-footer">
             <div class="container">
-                <div class="social-block">
-                    <h4>Follow us on social networks</h4>
-                    <ul class="social-block__list">
-                        <li>
-                            <a href="#">
-                                Facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Facebook
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="">
-                    Test
+                <div class="row justify-content-between align-items-end">
+                    <div class="col-6 social-block">
+                        <h4>Follow us on social networks</h4>
+                        <ul class="social-block__list list-unstyled">
+                            <li>
+                                <a href="#">
+                                    <i class="mdi mdi-facebook-box"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 text-right">
+                        <span>All rights reserved. © Flying Cargo YU doo 2000-2017</span>
+                    </div>
                 </div>
             </div>
         </footer>
