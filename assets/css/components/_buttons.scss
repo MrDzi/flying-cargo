@@ -17,15 +17,28 @@
     line-height: 1.5;
     @include border-radius(3px);
     @include transition(background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out);
+    @include box-shadow(3px 8px 20px 0 rgba(0, 0, 0, 0.35));
+    @include transition(all .15s ease-in);
+    &:hover {
+        @include box-shadow(0 0 2px 0 rgba(0,0,0,.2));
+    }
 
     &--primary {
+        border-color: $blue-light;
         background-color: $blue-light;
         color: #fff;
-        @include box-shadow(0 8px 35px 0 rgba(0,0,0,.4));
-        @include transition(all .15s ease-in);
         &:hover {
+            color: #fff;
             background-color: darken($blue-light, 5%);
-            @include box-shadow(0 0 5px 0 rgba(0,0,0,.2));
+        }
+    }
+
+    &--inverse {
+        border-color: $blue-light;
+        background-color: #fff;
+        color: $blue-light;
+        &:hover {
+            color: $blue-light;
         }
     }
 }
