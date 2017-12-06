@@ -3,23 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title><?php echo get_bloginfo( 'name' ); ?></title>
-        <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
+        <title>Flying Cargo</title>
+        <meta name="description" content="sdfsdf">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/vendor/normalize.css">
-        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/vendor/materialdesignicons.min.css">
-        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/vendor/normalize.css">
+        <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/vendor/materialdesignicons.min.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
 
-        <script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/vendor/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/vendor/popper.js"></script>
-        <script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/main.js"></script>
-        <?php wp_head();?>
+        <script type="text/javascript" src="/assets/js/vendor/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/assets/js/vendor/popper.js"></script>
+        <script type="text/javascript" src="/assets/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/assets/js/main.js"></script>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -30,7 +29,7 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="logo">
-                        <a href="<?php echo get_bloginfo( 'wpurl' );?>"><img src="assets/img/fc-logo.jpg" alt="FlyingCargo logo"></a>
+                        <a href="#"><img src="assets/img/fc-logo.jpg" alt="FlyingCargo logo"></a>
                     </div>
                     <div class="dropdown dropdown--language">
                         <span class="dropdown-toggle dropdown-toggle--language" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SR</span>

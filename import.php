@@ -12,28 +12,22 @@
 <section class="section section--regular">
     <div class="container">
         <h3>Importing to Serbia</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-
-        <!-- Import/export wizzard -->
-        <div class="import-wizzard">
-            <div class="import-wizzard__steps">
-                <!-- TODO -->
-            </div>
-            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-            <div class="form-group">
-                <label for="countrySelect">Example select</label>
-                <select class="form-control" id="countrySelect">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
+        <p>For instructions on shipping to Serbia from your country, please visit 	http://www.fedex.com/rs. Then check back here for important information on Serbia Customs, shipping documents, and other detailed information on shipping to Serbia.</p>
+        <p>Below you can check whether your shipment needs customs clearance, what documents you need and what are the steps required.</p>
+        <p>Please be aware, that customs clearance procedures start in the origin country and are to be completed in the destination country. Consignments can not be released if not accompanied with all necessary documents. Duties and taxes shall be determined according to the product type, origin and value.</p>
     </div>
 </section>
 <!-- Content section ENDS -->
+
+<!-- Import/export wizzard section START -->
+<div class="section section--gray">
+    <div class="container">
+        <div class="import-wizzard-wrapper">
+            <div id="import-wizzard"></div>
+            <div id="import-wizzard-finish"></div>
+        </div>
+    </div>
+</div>
+<!-- Import/export wizzard section ENDS -->
 
 <?php include('templates/footer.php'); ?>

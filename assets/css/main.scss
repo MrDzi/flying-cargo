@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import 'components/all';
 @import 'base/all';
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: $black;
     font-size: 15px;
     @include box-shadow(0 3px 10px 0 rgba(0,0,0,.45));
@@ -21,6 +21,125 @@ a {
 
 ul, ol {
     margin-bottom: 0;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    &:not(:first-of-type) {
+        padding-top: 20px;
+        border-top: 1px solid $gray-light;
+    }
+}
+
+.form-check-input {
+    position: absolute;
+    left: -9999px;
+    + label {
+        font-weight: 300;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        background: #fff;
+        cursor: pointer;
+        padding: 10px;
+        margin: 0 15px;
+        width: 150px;
+        border: 2px solid transparent;
+        // @include border-radius(3px);
+        @include transition(background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out);
+        // @include box-shadow(3px 5px 15px 0 rgba(0, 0, 0, 0.1));
+        &:hover {
+            @include box-shadow(0 0 2px 0 rgba(0,0,0,.2));
+        }
+        + .fa-check-circle {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: none;
+            color: $blue-light;
+        }
+    }
+    &:checked {
+        + label {
+            font-weight: 600;
+            @include box-shadow(0 0 2px 0 rgba(0,0,0,.2));
+            border-bottom-color: $blue-light;
+            + .fa-check-circle {
+                display: block;
+            }
+        }
+    }
+    &:last-of-type {
+        + label {
+            margin-right: 0;
+        }
+    }
+}
+
+.form-check {
+    display: flex;
+}
+
+.import-wizzard-wrapper {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+}
+
+.form-group__question {
+    display: flex;
+}
+
+.form-group__question-header {
+    h4 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    span {
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
+
+.form-check-input-wrapper {
+    position: relative;
+}
+
+.form-group__order {
+    background: $gray-light;
+    border-radius: 50%;
+    display: flex;
+    line-height: 1;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.import-wizzard-finish-wrapper {
+    height: 0;
+    overflow: hidden;
+    @include transition(height .15s ease-in, opacity .25s ease-in .15s);
+}
+
+#import-wizzard-finish {
+    background-color: $blue-light;
+    color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    @include border-radius(3px);
+    @include box-shadow(3px 5px 15px 0 rgba(0, 0, 0, 0.3));
 }
 
 .page-title {
@@ -69,7 +188,7 @@ ul, ol {
 
 .section {
     position: relative;
-    padding: 70px 0;
+    padding: 50px 0;
     &--hero {
         background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../img/hero-bkg.jpg');
         background-repeat: no-repeat;
@@ -78,6 +197,9 @@ ul, ol {
     }
     &--contact {
         padding: 0;
+    }
+    &--gray {
+        background: $gray-lighter;
     }
 }
 
@@ -153,7 +275,7 @@ select {
 
 // Content section
 .section--content {
-    padding-bottom: 70px;
+    padding: 0 0 70px;
 }
 
 .info-blocks-wrapper {

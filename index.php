@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php include('templates/header.php'); ?>
 
 <!-- Hero section START -->
 <section class="section section--hero">
@@ -162,4 +162,4 @@
 </section>
 <!-- Map section END -->
 
-<?php get_footer(); ?>
+<?php include('templates/footer.php'); ?>
