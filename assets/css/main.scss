@@ -49,7 +49,7 @@ ul, ol {
         cursor: pointer;
         padding: 10px;
         margin: 0 15px;
-        width: 150px;
+        width: 160px;
         border: 2px solid transparent;
         // @include border-radius(3px);
         @include transition(background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out);
@@ -86,10 +86,17 @@ ul, ol {
     display: flex;
 }
 
-.import-wizzard-wrapper {
+.import-wrapper {
+    overflow: hidden;
     margin: 0 auto;
     width: 800px;
     max-width: 100%;
+    @include transition(height .25s ease-in-out);
+}
+
+.import-wizzard-finish-wrapper {
+    height: 0;
+    margin-top: 30px;
 }
 
 .form-group__question {
@@ -127,17 +134,10 @@ ul, ol {
     font-size: 14px;
 }
 
-.import-wizzard-finish-wrapper {
-    height: 0;
-    overflow: hidden;
-    @include transition(height .15s ease-in, opacity .25s ease-in .15s);
-}
-
 #import-wizzard-finish {
     background-color: $blue-light;
     color: #fff;
     padding: 30px;
-    margin-top: 40px;
     @include border-radius(3px);
     @include box-shadow(3px 5px 15px 0 rgba(0, 0, 0, 0.3));
 }

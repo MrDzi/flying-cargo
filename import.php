@@ -22,8 +22,10 @@
 <!-- Import/export wizzard section START -->
 <div class="section section--gray">
     <div class="container">
-        <div class="import-wizzard-wrapper">
+        <div class="import-wrapper import-wizzard-wrapper">
             <div id="import-wizzard"></div>
+        </div>
+        <div class="import-wrapper import-wizzard-finish-wrapper">
             <div id="import-wizzard-finish"></div>
         </div>
     </div>

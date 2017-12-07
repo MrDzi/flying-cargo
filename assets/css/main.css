@@ -103,7 +103,7 @@ ul, ol {
     cursor: pointer;
     padding: 10px;
     margin: 0 15px;
-    width: 150px;
+    width: 160px;
     border: 2px solid transparent;
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -138,10 +138,20 @@ ul, ol {
 .form-check {
   display: flex; }
 
-.import-wizzard-wrapper {
+.import-wrapper {
+  overflow: hidden;
   margin: 0 auto;
   width: 800px;
-  max-width: 100%; }
+  max-width: 100%;
+  -webkit-transition: height 0.25s ease-in-out;
+  -moz-transition: height 0.25s ease-in-out;
+  -ms-transition: height 0.25s ease-in-out;
+  -o-transition: height 0.25s ease-in-out;
+  transition: height 0.25s ease-in-out; }
+
+.import-wizzard-finish-wrapper {
+  height: 0;
+  margin-top: 30px; }
 
 .form-group__question {
   display: flex; }
@@ -172,20 +182,10 @@ ul, ol {
   font-weight: 400;
   font-size: 14px; }
 
-.import-wizzard-finish-wrapper {
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.15s ease-in, opacity 0.25s ease-in 0.15s;
-  -moz-transition: height 0.15s ease-in, opacity 0.25s ease-in 0.15s;
-  -ms-transition: height 0.15s ease-in, opacity 0.25s ease-in 0.15s;
-  -o-transition: height 0.15s ease-in, opacity 0.25s ease-in 0.15s;
-  transition: height 0.15s ease-in, opacity 0.25s ease-in 0.15s; }
-
 #import-wizzard-finish {
   background-color: #1896D4;
   color: #fff;
   padding: 30px;
-  margin-top: 40px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;

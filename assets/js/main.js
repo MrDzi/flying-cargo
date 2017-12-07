@@ -1,21 +1,21 @@
 $(document).ready(function() {
 
     var importWizzard = $('#import-wizzard'),
-        wizzardFinish = $('#import-wizzard-finish'),
-        wizzardWrapper = $('#import-wizzard-wrapper'),
-        wizzardWrapperHeight = getWizzardWrapperHeight();
+        importWizzardFinish = $('#import-wizzard-finish'),
+        importWizzardWrapper = $('.import-wizzard-wrapper'),
+        importWizzardFinishWrapper = $('.import-wizzard-finish-wrapper');
 
-    function getWizzardHeight() {
-        return importWizzard.height();
+    function getElemHeight(elem) {
+        return elem.height();
     }
-
-    function getWizzardWrapperHeight() {
-        return wizzardWrapper.height();
+    
+    function getElemOuterHeight(elem) {
+        return elem.outerHeight();
     }
-
-    function getWizzardFinishHeight() {
-        return wizzardFinish.height();
-    }
+    
+    function setElemHeight(elem, height) {
+        elem.css('height', height)
+    };
 
     var importData = {
         'senderType': {
@@ -31,6 +31,7 @@ $(document).ready(function() {
                     next: function() {
                         removeNextSiblings($("#senderType" + this.value));
                         renderNextQuestion('recipientType');
+                        setImportWizzardWrapperHeight();
                     }
                 },
                 'company': {
@@ -39,6 +40,7 @@ $(document).ready(function() {
                     next: function() {
                         removeNextSiblings($("#senderType" + this.value));
                         renderNextQuestion('recipientType');
+                        setImportWizzardWrapperHeight();
                     }
                 }
             }
@@ -56,6 +58,7 @@ $(document).ready(function() {
                     next: function() {
                         removeNextSiblings($("#recipientType" + this.value));
                         renderNextQuestion('value');
+                        setImportWizzardWrapperHeight();
                     }
                 },
                 'company': {
@@ -64,6 +67,7 @@ $(document).ready(function() {
                     next: function() {
                         removeNextSiblings($("#recipientType" + this.value));
                         renderNextQuestion('value');
+                        setImportWizzardWrapperHeight();
                     }
                 }
             }
@@ -81,6 +85,7 @@ $(document).ready(function() {
                     next: function() {
                         removeNextSiblings($("#value" + this.value));
                         renderNextQuestion('clearanceType');
+                        setImportWizzardWrapperHeight();
                     }
                 },
                 'over50': {
@@ -89,6 +94,7 @@ $(document).ready(function() {
                     next: function() {
                         removeNextSiblings($("#value" + this.value));
                         renderNextQuestion('clearanceType');
+                        setImportWizzardWrapperHeight();
                     }
                 }
             }
@@ -139,10 +145,21 @@ $(document).ready(function() {
             }
         }
     };
+    
+    function setImportWizzardWrapperHeight() {
+        let importWizzardHeight = getElemHeight(importWizzard);
+        return setElemHeight(importWizzardWrapper, importWizzardHeight);
+    };
+    
+    function setImportWizzardFinishWrapperHeight() {
+        let importWizzardFinishHeight = getElemOuterHeight(importWizzardFinish);
+        return setElemHeight(importWizzardFinishWrapper, importWizzardFinishHeight);
+    }
 
     function init() {
         renderFormGroup(createFormGroupElement(importData['senderType']));
         addNewChangeListener(importData['senderType']);
+        setImportWizzardWrapperHeight();
     }
     init();
 
@@ -196,12 +213,11 @@ $(document).ready(function() {
 
     function removeNextSiblings(input) {
         var nextSiblings = input.closest('.form-group').nextAll('.form-group').remove();
-        wizzardFinish.empty();
+        importWizzardFinish.empty();
     }
 
     function appendToWizzardFinishAndAnimate(content) {
-        wizzardFinish.append(content);
-        wizzardFinishHeight = getWizzardFinishHeight();
-        // TODO
+        importWizzardFinish.append(content);
+        setImportWizzardFinishWrapperHeight();
     }
 });
