@@ -6,10 +6,12 @@
         <div class="row">
             <div class="col-4">
                 <div class="tracking-block">
-                    <h3><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
-                        '[:en]Track package[:]
-                        [:rs]Prati posiljku[:]'
-                    ); ?></h3>
+                    <h3>
+                        <?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                            '[:en]Track package[:]
+                            [:rs]Prati posiljku[:]'
+                        ); ?>
+                    </h3>
                     <textarea id="trackingNumbers" class="full-width" name="trackingNumbers" placeholder="Enter tracking number(s)"></textarea>
                     <div class="row justify-content-between align-items-center mt-2">
                         <div class="col-6 tracking-block__info">
@@ -136,7 +138,7 @@
 
 <!-- Map section START -->
 <section class="section section--contact">
-    <!-- TODO Google map -->
+    <div id="map"></div>
 </section>
 <!-- Map section END -->
 

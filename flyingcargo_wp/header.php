@@ -8,12 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <!-- <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/vendor/normalize.css">
-        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/vendor/materialdesignicons.min.css"> -->
-        <!-- <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/main.css"> -->
 
         <?php wp_head();?>
     </head>
@@ -28,13 +22,18 @@
                     <div class="logo">
                         <a href="<?php echo get_bloginfo( 'wpurl' );?>"><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/fc-logo.jpg" alt="FlyingCargo logo"></a>
                     </div>
-                    <?php echo qtranxf_generateLanguageSelectCode(‘both’); ?>
-                    <div class="dropdown dropdown--language">
-                        <span class="dropdown-toggle dropdown-toggle--language" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SR</span>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">SR</a>
-                            <a class="dropdown-item" href="#">EN</a>
-                        </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <?php
+                            $args = array(
+                                'menu_class' => 'nav d-flex justify-content-between',        
+                                'menu' => '(your_menu_id)'
+                            );
+                            wp_nav_menu( $args ); 
+                            echo qtranxf_generateLanguageSelectCode(array(
+                                'type'   => 'custom',
+                                'format' => '<span class="language-code">%c</span>'
+                            )); 
+                        ?>
                     </div>
                 </div>
             </div>
