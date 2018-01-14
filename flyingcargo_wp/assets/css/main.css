@@ -52,17 +52,20 @@
     background-color: #fff;
     color: #1896D4; }
     .button--inverse:hover {
-      color: #1896D4; }
+      color: #1896D4; 
+  }
+  
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2A2A2A;
-  font-size: 15px;
-  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45);
-  -ms-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45);
-  -o-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45);
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45); }
+  font-size: 15px; 
+  margin-bottom: 177px;
+}
 
 a {
   font-weight: bold;
@@ -121,9 +124,10 @@ ul, ol {
       -o-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2); }
     .form-check-input + label + .fa-check-circle {
+        font-size: 13px;
       position: absolute;
-      right: 10px;
-      top: 10px;
+      right: 2px;
+      top: 2px;
       display: none;
       color: #1896D4; }
   .form-check-input:checked + label {
@@ -145,6 +149,7 @@ ul, ol {
 .import-wrapper {
   overflow: hidden;
   margin: 0 auto;
+  padding-top: 10px;
   width: 800px;
   max-width: 100%;
   -webkit-transition: height 0.25s ease-in-out;
@@ -227,13 +232,23 @@ ul, ol {
   -ms-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); }
+  
+  .menu-main-menu-container a {
+      font-weight: normal;
+  }
 
 .main-footer {
   color: #fff;
-  background-image: url("../img/world_map.png");
+  background-color: #404040;
+  background-image: url("../img/world_map_1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px 0;
+  padding: 20px 0 40px;
+  position: absolute;
+  bottom: 0;
+  height: 177px;
+  box-sizing: border-box;
+  width: 100%;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
   -ms-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
@@ -412,10 +427,12 @@ select {
     font-size: 28px;
     color: #fff; }
 
-.social-block h4 {
+.social-block {
   font-size: 14px;
   color: #fff;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 30px;
+}
 
 .social-block a {
   display: inline-block;
@@ -424,6 +441,14 @@ select {
   .social-block a i {
     font-size: 32px;
     height: 32px; }
+    
+.social-block a:hover {
+    color: #bababa;
+}
+    
+.small {
+    font-size: 13px;
+}
 
 /***  Posts page  ***/
 .posts-list__post {
@@ -465,12 +490,13 @@ select {
   .post-excerpt p {
     font-size: 22px;
     font-weight: bold; }
-    
+
 /* Language chooser */
 .language-chooser {
     list-style: none;
     padding: 0;
-    margin: 0;
+    padding-left: 30px;
+    border-left: 1px solid #bababa;
 }
 
 .language-chooser>li {
@@ -512,9 +538,30 @@ select {
     font-size: 13px;
     text-transform: uppercase;
     margin-right: 0 !important;
-    padding-right: 4px;
+    padding-right: 2px;
 }
 
-.language-chooser-item:not(:last-child) {
-    border-right: 1px solid #bababa;
+@media only screen and (max-width: 960px) {
+    .info-blocks-wrapper .col-12 {
+        margin-bottom: 30px;
+    }
+    .tracking-block__info {
+        margin-bottom: 10px;
+    }
+    .moto {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+    .form-group__question {
+        margin-bottom: 20px;
+    }
+    .form-check-input + label {
+        width: auto;
+    }
 }

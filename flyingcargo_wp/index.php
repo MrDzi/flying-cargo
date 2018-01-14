@@ -4,7 +4,7 @@
 <section class="section section--hero">
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <div class="tracking-block">
                     <h3>
                         <?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
@@ -14,16 +14,16 @@
                     </h3>
                     <textarea id="trackingNumbers" class="full-width" name="trackingNumbers" placeholder="Enter tracking number(s)"></textarea>
                     <div class="row justify-content-between align-items-center mt-2">
-                        <div class="col-6 tracking-block__info">
+                        <div class="col-12 col-lg-6 tracking-block__info">
                             Track up to 10 numbers at a time. Separate with a comma or Enter.
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <button class="button button--primary">Track</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-12 col-lg-8">
                 <div class="moto">
                     <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</span>
                 <div>
@@ -38,7 +38,7 @@
     <div class="container">
         <div class="row info-blocks-wrapper">
 
-            <div class="col-md-4">
+            <div class="col-lg-4 col-12">
                 <div class="info-block info-block--links">
                     <h3>Quick links</h3>
                     <ul class="list-unstyled">
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-lg-4 col-12">
                 <div class="info-block info-block--news">
                     <h3>News</h3>
                     <ul class="news-list list-unstyled">
@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-lg-4 col-12">
                 <div class="info-block info-block--contact">
                     <h3>Contact</h3>
                     <div class="info-block__content">
