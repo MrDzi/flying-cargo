@@ -214,8 +214,10 @@ $(document).ready(function() {
     }
 
     function removeNextSiblings(input) {
-        var nextSiblings = input.closest('.form-group').nextAll('.form-group').remove();
+        var nextSiblings = input.closest('.form-group').nextAll('.form-group');
+        nextSiblings.remove();
         importWizzardFinish.empty();
+        setElemHeight(importWizzardFinishWrapper, 0);
     }
 
     function appendToWizzardFinishAndAnimate(content) {
