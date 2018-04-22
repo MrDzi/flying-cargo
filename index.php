@@ -1,29 +1,18 @@
 <?php include('templates/header.php'); ?>
 
 <!-- Hero section START -->
-<section class="section section--hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="tracking-block">
-                    <h3>Track shipment</h3>
-                    <textarea id="trackingNumbers" class="full-width" name="trackingNumbers" placeholder="Enter tracking number(s)"></textarea>
-                    <div class="row justify-content-between align-items-center mt-2">
-                        <div class="col-6 tracking-block__info">
-                            Track up to 10 numbers at a time. Separate with a comma or Enter.
-                        </div>
-                        <div class="col-6">
-                            <button class="button button--primary">Track</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8">
-                <div class="moto">
-                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</span>
-                <div>
-            </div>
+<section class="section section--hero d-flex flex-column justify-content-center align-items-center">
+    <div class="moto">
+        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+    </div>
+    <div class="tracking-block">
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <input class="input input--tracking" type="text" id="trackingNumbers" name="trackingNumbers" placeholder="Enter tracking number(s)"></input>
+            <button class="button button--primary button--big">Track ...</button>
         </div>
+        <!-- <div class="tracking-block__info">
+            Track up to 10 numbers at a time, separate with a comma or Enter.
+        </div> -->
     </div>
 </section>
 <!-- Hero section START -->
@@ -31,9 +20,51 @@
 <!-- Content section START -->
 <section class="section section--content">
     <div class="container">
-        <div class="row info-blocks-wrapper">
+        <div class="info-blocks-wrapper">
 
-            <div class="col-md-4">
+            <div class="row news">
+                <div class="col-md-4">
+                    <article class="news-list__article float-right">
+                        <a href="#">
+                            <img src="http://lorempixel.com/110/74" alt="">
+                            <div class="news-list__article-content">
+                                <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
+                                <!-- <span class="date">11.11.2017.</span> -->
+                                <p>This is some content of some news. Please ignore this text and skip it, don't read it. It's not important.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="news-list__article">
+                        <a href="#">
+                            <img src="http://lorempixel.com/110/74" alt="">
+                            <div class="news-list__article-content">
+                                <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
+                                <!-- <span class="date">11.11.2017.</span> -->
+                                <p>This is some content of some news. Please ignore this text and skip it, don't read it. It's not important.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="news-list__article float-left">
+                        <a href="#">
+                            <img src="http://lorempixel.com/110/74" alt="">
+                            <div class="news-list__article-content">
+                                <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
+                                <!-- <span class="date">11.11.2017.</span> -->
+                                <p>This is some content of some news. Please ignore this text and skip it, don't read it. It's not important.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" name="button" class="button button--inverse button--big">Read all news</button>
+            </div>
+
+            <!-- <div class="col-md-4">
                 <div class="info-block info-block--links">
                     <h3>Quick links</h3>
                     <ul class="list-unstyled">
@@ -75,7 +106,6 @@
 
             <div class="col-md-4">
                 <div class="info-block info-block--news">
-                    <h3>News</h3>
                     <ul class="news-list list-unstyled">
                         <li class="mb-3">
                             <article class="news-list__article">
@@ -115,9 +145,9 @@
                         <a href="posts.php" class="color-yellow">All news <i class="mdi mdi-chevron-right"></i></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="info-block info-block--contact">
                     <h3>Contact</h3>
                     <div class="info-block__content">
@@ -149,7 +179,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

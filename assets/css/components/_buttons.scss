@@ -2,7 +2,7 @@
 
 .button {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -15,13 +15,13 @@
     padding: 9px 20px;
     font-size: 1rem;
     line-height: 1.5;
-    @include border-radius(3px);
+    // @include border-radius(3px);
     @include transition(background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out);
-    @include box-shadow(3px 8px 20px 0 rgba(0, 0, 0, 0.35));
+    // @include box-shadow(3px 8px 20px 0 rgba(0, 0, 0, 0.35));
     @include transition(all .15s ease-in);
-    &:hover {
-        @include box-shadow(0 0 2px 0 rgba(0,0,0,.2));
-    }
+    // &:hover {
+    //     @include box-shadow(0 0 2px 0 rgba(0,0,0,.2));
+    // }
 
     &--primary {
         border-color: $blue-light;

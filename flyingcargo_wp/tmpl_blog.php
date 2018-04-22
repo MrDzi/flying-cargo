@@ -9,7 +9,10 @@
     <!-- Page title section STARTS -->
     <div class="page-title">
         <div class="container">
-            <h1>All news</h1>
+            <h1><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                '[:en]All news[:]
+                [:rs]Sve vesti[:]'
+            ); ?></h1>
         </div>
     </div>
     <!-- Page title section ENDS -->
