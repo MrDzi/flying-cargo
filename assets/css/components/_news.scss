@@ -1,0 +1,39 @@
+.news-list__thumb {
+	width: 110px;
+	height: 70px;
+	margin-right: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.news {
+    padding: 50px 0 30px;
+    // background-color: #fff;
+    color: #fff;
+    img {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    a {
+        color: $gray-dark;
+    }
+    p {
+        color: $gray;
+        font-weight: 300;
+    }
+    h3:after {
+        background-color: lighten($gray-dark, 10%);
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+
+.news-list__article {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}

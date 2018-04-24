@@ -1,0 +1,33 @@
+/* Language chooser */
+.language-chooser {
+	list-style: none;
+	padding: 0;
+	padding-left: 30px;
+	border-left: 1px solid #bababa;
+}
+
+.language-chooser > li {
+	display: inline-block;
+	color: #1896d4;
+}
+
+.language-chooser > li > a {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.language-chooser > li:not(:last-child) {
+	margin-right: 5px;
+}
+
+.language-chooser > li.active a {
+	color: #bababa;
+}
+
+.language-chooser-item {
+	display: block;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-right: 0 !important;
+	padding-right: 2px;
+}

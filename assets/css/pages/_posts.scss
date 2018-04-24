@@ -1,0 +1,44 @@
+/***  Posts page  ***/
+.posts-list {
+    &__post {
+        height: 180px;
+        background-color: $gray-lighter;
+        overflow: hidden;
+        @include border-radius(2px);
+        @include transition(background-color .1s ease-in);
+        &:hover {
+            background-color: $gray-light;
+        }
+        a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__post-image {
+        width: 200px;
+        flex-shrink: 0;
+        background-image: url('http://lorempixel.com/500/500');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__post-content {
+        padding: $padding;
+    }
+}
+
+.posts-list__post-content-inner {
+    overflow: hidden !important;
+    height: 100%;
+}
+
+.post-excerpt {
+    border-bottom: 1px solid $gray-light;
+    margin-bottom: 30px;
+    p {
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
