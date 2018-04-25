@@ -20,9 +20,8 @@
 <!-- Content section START -->
 <section class="section section--content">
     <div class="container">
-        <div class="info-blocks-wrapper">
-
-            <div class="row news">
+        <div class="news-block-wrapper">
+            <div class="row">
                 <div class="col-md-4">
                     <article class="news-list__article float-right">
                         <a href="#">
@@ -60,127 +59,9 @@
                     </article>
                 </div>
             </div>
-            <div class="text-center">
+            <div class="text-center pt-20">
                 <button type="button" name="button" class="button button--inverse button--big">Read all news</button>
             </div>
-
-            <!-- <div class="col-md-4">
-                <div class="info-block info-block--links">
-                    <h3>Quick links</h3>
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <a href="#" class="d-flex align-items-center">
-                                <span class="links-list__icon d-flex align-items-center justify-content-center">
-                                    <i class="mdi mdi-forum"></i>
-                                </span>
-                                <span class="links-list__text">Chat live with our support</span>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="import.php" class="d-flex align-items-center">
-                                <span class="links-list__icon d-flex align-items-center justify-content-center">
-                                    <i class="mdi mdi-airplane-landing"></i>
-                                </span>
-                                <span class="links-list__text">Import</span>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="d-flex align-items-center">
-                                <span class="links-list__icon d-flex align-items-center justify-content-center">
-                                    <i class="mdi mdi-airplane-takeoff"></i>
-                                </span>
-                                <span class="links-list__text">Export</span>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="d-flex align-items-center">
-                                <span class="links-list__icon d-flex align-items-center justify-content-center">
-                                    <i class="mdi mdi-domain"></i>
-                                </span>
-                                <span class="links-list__text">About Us</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="info-block info-block--news">
-                    <ul class="news-list list-unstyled">
-                        <li class="mb-3">
-                            <article class="news-list__article">
-                                <a href="#" class="d-flex">
-                                    <img src="http://lorempixel.com/110/74" alt="">
-                                    <div class="news-list__article-content">
-                                        <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
-                                        <span class="date">11.11.2017.</span>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="mb-3">
-                            <article class="news-list__article">
-                                <a href="#" class="d-flex">
-                                    <img src="http://lorempixel.com/110/74" alt="">
-                                    <div class="news-list__article-content">
-                                        <h4>From Engines to Tail Lights, FedEx Technicians’ Knowledge On Display</h4>
-                                        <span class="date">11.11.2017.</span>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="mb-3">
-                            <article class="news-list__article">
-                                <a href="#" class="d-flex">
-                                    <img src="http://lorempixel.com/110/74" alt="">
-                                    <div class="news-list__article-content">
-                                        <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
-                                        <span class="date">11.11.2017.</span>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                    </ul>
-                    <div class="text-right pt-2">
-                        <a href="posts.php" class="color-yellow">All news <i class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- <div class="col-md-4">
-                <div class="info-block info-block--contact">
-                    <h3>Contact</h3>
-                    <div class="info-block__content">
-                        <h4>Flying Cargo YU doo</h4>
-                        <ul class="contact-list list-unstyled">
-                            <li class="d-flex align-items-center">
-                                <i class="mdi mdi-map-marker small-icon mr-2"></i>
-                                <span>Autoput 22, 11000 Beograd</span>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <i class="mdi mdi-phone small-icon mr-2"></i>
-                                <span>+381 11 3109 400</span>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <i class="mdi mdi-fax small-icon mr-2"></i>
-                                <span>+381 11 3109 444</span>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <i class="mdi mdi-email small-icon mr-2"></i>
-                                <span>csa@flying-cargo.rs</span>
-                            </li>
-                            <li class="d-flex align-items-top">
-                                <i class="mdi mdi-clock small-icon mr-2"></i>
-                                <span class="mt-1">Mon - Fri: 08:00 to 19:00</br>
-                                    Sat: 08:00 to 14:00</br>
-                                    Closed on Sundays and public holidays
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
-
         </div>
     </div>
 </section>

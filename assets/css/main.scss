@@ -12,13 +12,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: $black;
     font-size: 16px;
-    margin-bottom: 177px;
+    margin-bottom: 300px;
 }
 
 a {
     font-weight: bold;
     color: $blue-light;
-    @include transition(color .1s ease-in);
+    @include transition(color .03s ease-in);
     &:hover {
         text-decoration: none;
         color: $blue;
@@ -140,19 +140,12 @@ h3 {
     padding: 0 0 70px;
 }
 
-.info-blocks-wrapper {
-	background-color: #fff;
-    position: relative;
-	top: -50px;
-	padding-bottom: 30px;
-}
-
 .info-block {
-    background-color: $gray-lighter;
-    padding: $padding;
-    height: 100%;
-    border-top: 3px solid $blue-light;
-    @include border-radius($border-radius);
+    // background-color: $gray-lighter;
+    // padding: $padding;
+    // height: 100%;
+	font-weight: 300;
+    // border-top: 3px solid $blue-light;
     h3 {
         text-align: center;
         margin-bottom: 25px;

@@ -8,6 +8,9 @@
         display: inline-block;
         color: #fff;
         height: 32px;
+		&:hover {
+			color: #fff;
+		}
         i {
             font-size: 36px;
             height: 36px;

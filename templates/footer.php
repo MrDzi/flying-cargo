@@ -1,8 +1,38 @@
     <footer class="main-footer">
         <div class="container">
-            <div class="row justify-content-between align-items-end">
-                <div class="col-6 social-block">
-                    <h4>Follow us on social networks</h4>
+            <div class="row">
+				<div class="col-4">
+					<div class="info-block info-block--contact">
+                        <h4>Flying Cargo YU doo</h4>
+                        <ul class="contact-list list-unstyled">
+                            <li class="d-flex align-items-center">
+                                <i class="mdi mdi-map-marker small-icon mr-2"></i>
+                                <span>Autoput 22, 11000 Beograd</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="mdi mdi-phone small-icon mr-2"></i>
+                                <span>+381 11 3109 400</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="mdi mdi-fax small-icon mr-2"></i>
+                                <span>+381 11 3109 444</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="mdi mdi-email small-icon mr-2"></i>
+                                <span>csa@flying-cargo.rs</span>
+                            </li>
+                            <li class="d-flex align-items-top">
+                                <i class="mdi mdi-clock small-icon mr-2"></i>
+                                <span class="mt-1">Mon - Fri: 08:00 to 19:00</br>
+                                    Sat: 08:00 to 14:00</br>
+                                    Closed on Sundays and public holidays
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+                <div class="col-4 social-block text-center">
+                    <!-- <h4>Follow us on social networks</h4> -->
                     <ul class="social-block__list list-unstyled">
                         <li>
                             <a href="#">
@@ -11,7 +41,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 text-right">
+                <div class="col-4 text-right">
                     <span>All rights reserved. © Flying Cargo YU doo 2000-2017</span>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 .main-footer {
     color: #fff;
+	font-size: 14px;
+	font-weight: 300;
 	background-color: #404040;
 	background-image: url("../img/world_map.png");
 	background-repeat: no-repeat;
@@ -7,7 +9,7 @@
 	padding: 20px 0 40px;
 	position: absolute;
 	bottom: 0;
-	height: 177px;
+	height: 300px;
 	box-sizing: border-box;
 	width: 100%;
     @include box-shadow(0 0 10px 0 rgba(0,0,0,.25));
