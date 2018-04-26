@@ -1,0 +1,24 @@
+@media only screen and (max-width: 960px) {
+	.info-blocks-wrapper .col-12 {
+		margin-bottom: 30px;
+	}
+	.tracking-block__info {
+		margin-bottom: 10px;
+	}
+	.moto {
+		font-size: 20px;
+		margin: 20px 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.form-group {
+		flex-direction: column;
+	}
+	.form-group__question {
+		margin-bottom: 20px;
+	}
+	.form-check-input + label {
+		width: auto;
+	}
+}

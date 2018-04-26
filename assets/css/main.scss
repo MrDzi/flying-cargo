@@ -25,29 +25,18 @@ a {
     }
 }
 
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
 ul, ol {
     margin-bottom: 0;
 }
 
 img {
 	max-width: 100%;
-}
-
-.excerpt {
-	background-color: #f3f3f3;
-	font-weight: 600;
-	padding: 30px 0 20px;
-	line-height: 26px;
-}
-
-.wp-caption-text {
-	font-size: 14px;
-	color: #999;
-	font-weight: 300;
-	font-style: italic;
-	border-bottom: 1px solid #999;
-	padding: 2px 2px 3px;
-	margin-bottom: 40px;
 }
 
 .page-title {
@@ -68,20 +57,6 @@ img {
     color: $gray-light;
 }
 
-.menu-main-menu-container a {
-	font-weight: normal;
-}
-
-.logo {
-    img {
-        width: 60px;
-    }
-}
-
-.dropdown-toggle--language {
-    -webkit-appearance: none !important;
-}
-
 .section {
     position: relative;
     padding: 40px 0;
@@ -100,38 +75,9 @@ img {
     }
 }
 
-h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 .date {
     font-size: 13px;
     color: $gray;
-}
-
-.tracking-block {
-    // width: 400px;
-    .button {
-        width: 100%;
-    }
-    &__info {
-        margin-top: 5px;
-        color: $gray;
-        text-transform: uppercase;
-        font-size: 11px;
-        line-height: 1.3;
-    }
-}
-
-.moto {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 300;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 // Content section
@@ -208,37 +154,4 @@ h3 {
 
 #map {
 	height: 400px;
-}
-
-.nav {
-	margin-right: 10px;
-}
-
-.nav li {
-	margin-right: 20px;
-}
-
-@media only screen and (max-width: 960px) {
-	.info-blocks-wrapper .col-12 {
-		margin-bottom: 30px;
-	}
-	.tracking-block__info {
-		margin-bottom: 10px;
-	}
-	.moto {
-		font-size: 20px;
-		margin: 20px 0;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.form-group {
-		flex-direction: column;
-	}
-	.form-group__question {
-		margin-bottom: 20px;
-	}
-	.form-check-input + label {
-		width: auto;
-	}
 }
