@@ -3,14 +3,27 @@
 	font-size: 14px;
 	font-weight: 300;
 	background-color: #404040;
-	background-image: url("../img/world_map.png");
+	background-image: url("../img/world_map_big_2.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 20px 0 40px;
+    background-position: center;
+	padding: 60px 0 30px;
 	position: absolute;
 	bottom: 0;
-	height: 300px;
+	// height: 300px;
 	box-sizing: border-box;
 	width: 100%;
     @include box-shadow(0 0 10px 0 rgba(0,0,0,.25));
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    .small {
+        color: $gray;
+    }
+}
+
+.contact-list {
+    color: $gray-light;
 }

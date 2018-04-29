@@ -37,4 +37,11 @@
     text-align: center;
     width: 80%;
     margin: 0 auto;
+	&--sidebar {
+		text-align: left;
+		width: 100%;
+	}
+	h4:hover {
+		color: $blue-light;
+	}
 }

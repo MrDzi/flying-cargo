@@ -38,11 +38,12 @@
 }
 
 .post-excerpt {
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-lighter;
     margin-bottom: 30px;
     p {
         font-size: 22px;
-        font-weight: bold;
+        font-weight: 300;
+        margin-bottom: 30px;
     }
 }
 
