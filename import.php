@@ -12,9 +12,15 @@
 <section class="section section--regular">
     <div class="container">
         <h3>Importing to Serbia</h3>
-        <p>For instructions on shipping to Serbia from your country, please visit 	http://www.fedex.com/rs. Then check back here for important information on Serbia Customs, shipping documents, and other detailed information on shipping to Serbia.</p>
-        <p>Below you can check whether your shipment needs customs clearance, what documents you need and what are the steps required.</p>
-        <p>Please be aware, that customs clearance procedures start in the origin country and are to be completed in the destination country. Consignments can not be released if not accompanied with all necessary documents. Duties and taxes shall be determined according to the product type, origin and value.</p>
+        <p>Očekujete paket iz inostranstva a još uvek niste izabrali zastupnika u carinskom postupku? Kompanija FedEx nudi Vam i uslugu uvoznog carinjenja. Iskustvo od preko 15 godina u Srbiji osiguralo nam je odlično poznavanje carinskih regulativa. Šta nas razlikuje od drugih:</p>
+        <ul>
+            <li>Dobro umrežen operativni sistem na globalnom nivou</li>
+            <li>Briga i pristupačnost Carinskog odeljenja</li>
+            <li>Mogućnost praćenja Vaših pošiljaka u svakom trenutku</li>
+            <li>Blagovremena obaveštenja o prispeću Vaših pošiljaka</li>
+            <li>Brzo i efikasno okončanje carinskih postupaka</li>
+            <li>Isporuka „od vrata do vrata“</li>
+        </ul>
     </div>
 </section>
 <!-- Content section ENDS -->
@@ -31,5 +37,24 @@
     </div>
 </div>
 <!-- Import/export wizzard section ENDS -->
+
+<!-- FAQ section STARTS -->
+<section class="section section--faq">
+    <div class="container">
+        <h3>FAQ</h3>
+        <div>
+            <i class="mdi mdi-map-marker small-icon mr-2"></i>
+            <h4>Kako da pošaljem umetničko delo u inostranstvo?</h4>
+            <div>Za otpremanje umetničkih dela u inostranstvo, najpre će Vam biti potrebna dozvola za izvoz Zavoda za zaštitu spomenika kulture http://www.heritage.gov.rs . Sva umetnička dela podležu izvoznom carinjenju. Kompanija FedEx nudi Vam potpuno besplatnu uslugu izvoznog carinjenja. Pored dozvole, dokumentacija neophodna za izvoz je u nastavku:
+                -	Profaktura/Faktura
+                -	Kopija lične karte ili pasoša
+                -	Nalog za carinjenje
+                -	Isprava o zastupanju
+            Za dodatne informacije I savete u vezi otpremanja paketa molimo Vas da kontaktirate korisnički servis putem e-maila csa@flying-cargo.rs ili telefona 011/3109-400.
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section ENDS -->
 
 <?php include('templates/footer.php'); ?>

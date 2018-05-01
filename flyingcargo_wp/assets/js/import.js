@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    console.log('import');
-
     var importWizzard = $('#import-wizzard'),
         importWizzardFinish = $('#import-wizzard-finish'),
         importWizzardWrapper = $('.import-wizzard-wrapper'),
@@ -214,10 +212,8 @@ $(document).ready(function() {
     }
 
     function removeNextSiblings(input) {
-        var nextSiblings = input.closest('.form-group').nextAll('.form-group');
-        nextSiblings.remove();
+        input.closest('.form-group').nextAll('.form-group').remove();
         importWizzardFinish.empty();
-        setElemHeight(importWizzardFinishWrapper, 0);
     }
 
     function appendToWizzardFinishAndAnimate(content) {

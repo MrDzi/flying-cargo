@@ -8,11 +8,11 @@ $(document).ready(function() {
     function getElemHeight(elem) {
         return elem.height();
     }
-    
+
     function getElemOuterHeight(elem) {
         return elem.outerHeight();
     }
-    
+
     function setElemHeight(elem, height) {
         elem.css('height', height)
     };
@@ -145,14 +145,14 @@ $(document).ready(function() {
             }
         }
     };
-    
+
     function setImportWizzardWrapperHeight() {
         let importWizzardHeight = getElemHeight(importWizzard);
         return setElemHeight(importWizzardWrapper, importWizzardHeight);
     };
-    
-    function setImportWizzardFinishWrapperHeight() {
-        let importWizzardFinishHeight = getElemOuterHeight(importWizzardFinish);
+
+    function setImportWizzardFinishWrapperHeight(height) {
+        let importWizzardFinishHeight = typeof height !== 'undefined' ? height : getElemOuterHeight(importWizzardFinish);
         return setElemHeight(importWizzardFinishWrapper, importWizzardFinishHeight);
     }
 
@@ -178,7 +178,7 @@ $(document).ready(function() {
         var formGroupHtml =
         "<div class='form-group'>"
         + "<div class='form-group__question'><span class='form-group__order'>" + formGroup.order + "</span>"
-        + "<div class='form-group__question-header'><h4>" + formGroup.question + "</h4><span>" + formGroup.description + "</span></div></div>"
+        + "<div class='form-group__question-header'><h4>" + formGroup.question + "</h4></div></div>"
         + "<div class='form-check'>"
         + inputs
         + "</div></div>";
@@ -212,12 +212,13 @@ $(document).ready(function() {
     }
 
     function removeNextSiblings(input) {
-        var nextSiblings = input.closest('.form-group').nextAll('.form-group').remove();
+        input.closest('.form-group').nextAll('.form-group').remove();
         importWizzardFinish.empty();
+        setImportWizzardFinishWrapperHeight(0);
     }
 
     function appendToWizzardFinishAndAnimate(content) {
-        importWizzardFinish.append(content);
+        importWizzardFinish.append('<div class="p-30">' + content + '</div>');
         setImportWizzardFinishWrapperHeight();
     }
 });

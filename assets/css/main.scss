@@ -82,6 +82,14 @@ img {
 		margin-top: -50px;
 		padding: 40px;
 	}
+	&--faq {
+		background: url('../img/blurred.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		color: #fff;
+		padding: 80px 0;
+	}
 }
 
 .date {
@@ -169,4 +177,13 @@ img {
 
 #map {
 	height: 400px;
+}
+
+.meshim_widget_widgets_TitleBar {
+	background: $blue;
+}
+
+.meshim_widget_components_chatWindow_MainStack.ms_br {
+	border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
