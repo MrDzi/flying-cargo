@@ -42,10 +42,12 @@
 <section class="section section--faq">
     <div class="container">
         <h3>FAQ</h3>
-        <div>
-            <i class="mdi mdi-map-marker small-icon mr-2"></i>
-            <h4>Kako da pošaljem umetničko delo u inostranstvo?</h4>
-            <div>Za otpremanje umetničkih dela u inostranstvo, najpre će Vam biti potrebna dozvola za izvoz Zavoda za zaštitu spomenika kulture http://www.heritage.gov.rs . Sva umetnička dela podležu izvoznom carinjenju. Kompanija FedEx nudi Vam potpuno besplatnu uslugu izvoznog carinjenja. Pored dozvole, dokumentacija neophodna za izvoz je u nastavku:
+        <div class="collapsible-block-wrapper">
+            <div class="collapsible-block__header d-flex align-items-center" data-toggle="collapse" href="#collapse1">
+                <i class="mdi mdi-plus-circle small-icon mr-2"></i>
+                <h4>Kako da pošaljem umetničko delo u inostranstvo?</h4>
+            </div>
+            <div class="collapse collapsible-block" id="collapse1">Za otpremanje umetničkih dela u inostranstvo, najpre će Vam biti potrebna dozvola za izvoz Zavoda za zaštitu spomenika kulture http://www.heritage.gov.rs . Sva umetnička dela podležu izvoznom carinjenju. Kompanija FedEx nudi Vam potpuno besplatnu uslugu izvoznog carinjenja. Pored dozvole, dokumentacija neophodna za izvoz je u nastavku:
                 -	Profaktura/Faktura
                 -	Kopija lične karte ili pasoša
                 -	Nalog za carinjenje
@@ -53,8 +55,86 @@
             Za dodatne informacije I savete u vezi otpremanja paketa molimo Vas da kontaktirate korisnički servis putem e-maila csa@flying-cargo.rs ili telefona 011/3109-400.
             </div>
         </div>
+        <div class="collapsible-block-wrapper">
+            <div class="collapsible-block__header d-flex align-items-center" data-toggle="collapse" href="#collapse2">
+                <i class="mdi mdi-plus-circle small-icon mr-2"></i>
+                <h4>Zašto se naplaćuju troškovi zastupanja u procesu carinjenja?</h4>
+            </div>
+            <div class="collapse collapsible-block" id="collapse2">Troškovi koji nastaju prilikom redovnog carinjenja pošiljke su troškovi carinskog zastupanja u procesu samog carinjenja robe. Carinski zastupnici naše kompanije u procesu carinjenja pošiljke izrađuju deklaraciju sa kojom vrše carinjenje pošiljke.
+            </div>
+        </div>
+        <div class="collapsible-block-wrapper">
+            <div class="collapsible-block__header d-flex align-items-center" data-toggle="collapse" href="#collapse3">
+                <i class="mdi mdi-plus-circle small-icon mr-2"></i>
+                <h4>Zašto se naplaćuju usluge zastupanja u carinskom postupku, ako sam pošiljku platio ino-pošiljaocu po sistemu isporuke „od vrata do vrata“?</h4>
+            </div>
+            <div class="collapse collapsible-block" id="collapse3">Isporuka “od vrata do vrata“ podrazumeva da se nakon carinskog postupanja sa pošiljkom roba isporuči na adresu primaoca, ali nije oslobođena uvoznih procedura i dažbina.
+            </div>
+        </div>
+        <div class="collapsible-block-wrapper">
+            <div class="collapsible-block__header d-flex align-items-center" data-toggle="collapse" href="#collapse4">
+                <i class="mdi mdi-plus-circle small-icon mr-2"></i>
+                <h4>Zašto troškovi transporta, osiguranja i ostali troškovi koji su naznačeni na fakturi ulaze u carinsku i poresku osnovicu?</h4>
+            </div>
+            <div class="collapse collapsible-block" id="collapse4">Svi troškovi koji  su iskazani na profakturi ili fakturi koju šalje ino pošiljalac ulaze u obračun carinskog duga po zakonu Republike Srbije.
+            </div>
+        </div>
+        <div class="collapsible-block-wrapper">
+            <div class="collapsible-block__header d-flex align-items-center" data-toggle="collapse" href="#collapse5">
+                <i class="mdi mdi-plus-circle small-icon mr-2"></i>
+                <h4>Zbog čega je cena carine I PDV veća od vrednosti robe koju sam poručio preko interneta?</h4>
+            </div>
+            <div class="collapse collapsible-block" id="collapse5">Jedan od razloga koji može dovesti do toga da iznos dažbina bude veći nego vrednost robe, jeste slučaj kada pristigla roba podleže naplati carine I PDV-a, a u carinsku osnovicu uđe I trošak poštarine. Usluge brze pošte, odnosno ekspresnih kurirskih službi čije pošiljke imaju prioritetni status, skuplje su u odnosu na običnu poštu, a samim tim I carinska osnovica može biti podignuta. Ova informacija istaknuta je I na sajtu Uprave Carine.
+            </div>
+        </div>
     </div>
 </section>
 <!-- FAQ section ENDS -->
+
+<!-- Forbidden Goods section STARTS -->
+<div class="section section--bkg-image">
+    <div class="container">
+        <h3>Forbidden Goods</h3>
+        <div class="d-flex justify-content-center flex-wrap">
+            <div class="text-card-item">
+                <i class="mdi mdi-treasure-chest small-icon mr-2"></i>
+                <span>Antiques</span>
+            </div>
+            <div class="text-card-item">
+                <i class="mdi mdi-cash-multiple small-icon mr-2"></i>
+                <span>Money Orders</span>
+            </div>
+            <div class="text-card-item">
+                <i class="mdi mdi-car-battery small-icon mr-2"></i>
+                <span>Batteries, haz</span>
+            </div>
+            <div class="text-card-item">
+                <i class="mdi mdi-file-multiple small-icon mr-2"></i>
+                <span>Political Material</span>
+            </div>
+            <div class="text-card-item">
+                <i class="mdi mdi-file-document small-icon mr-2"></i>
+                <span>Deeds</span>
+            </div>
+            <div class="text-card-item">
+                <i class="mdi mdi-access-point small-icon mr-2"></i>
+                <span>X-Rays</span>
+            </div>
+            <div class="text-card-item">
+                <i class="mdi mdi-pill small-icon mr-2 rotate-90"></i>
+                <span>Drugs, non-prescription</span>
+            </div>
+            <div class="text-card-item">
+                <i class="mdi mdi-spray small-icon mr-2"></i>
+                <span>Ice, Blue</span>
+            </div>
+            <div class="text-card-item">
+                <i class="mdi mdi-elephant small-icon mr-2"></i>
+                <span>Ivory</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Forbidden Goods section ENDS -->
 
 <?php include('templates/footer.php'); ?>

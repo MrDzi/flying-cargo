@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700&subset=latin-ext");
 .mt-40 {
   margin-top: 40px; }
 
@@ -594,10 +596,24 @@ a {
   a:hover {
     text-decoration: none; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif; }
+
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 20px; }
+  margin-bottom: 30px;
+  text-align: center; }
+  h3:after {
+    content: '';
+    display: block;
+    margin: 24px auto 0;
+    height: 4px;
+    width: 85px;
+    background-color: #D5D5D5; }
+
+h4 {
+  font-size: 18px; }
 
 ul, ol {
   margin-bottom: 0; }
@@ -640,12 +656,65 @@ img {
     margin-top: -50px;
     padding: 40px; }
   .section--faq {
+    background: #2A2A2A;
+    color: #fff; }
+    .section--faq h3:after {
+      background-color: #9E9E9E; }
+  .section--bkg-image {
     background: url("../img/blurred.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
     padding: 80px 0; }
+    .section--bkg-image h3 {
+      color: #fff; }
+
+.collapsible-block-wrapper {
+  padding-top: 20px; }
+
+.collapsible-block__header {
+  cursor: pointer;
+  margin-bottom: 15px; }
+  .collapsible-block__header i {
+    font-size: 22px;
+    color: #F6D22F;
+    margin-right: 12px !important; }
+  .collapsible-block__header h4 {
+    margin-bottom: 0; }
+
+.collapsible-block {
+  padding-left: 35px;
+  color: #F6D22F; }
+
+.text-card-item {
+  color: #fff;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.28);
+  margin: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden; }
+  .text-card-item span {
+    position: relative;
+    z-index: 2; }
+  .text-card-item i {
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto !important;
+    text-align: center;
+    font-size: 80px;
+    line-height: 0.8;
+    transform: rotate(-45deg); }
+    .text-card-item i.rotate-90 {
+      transform: rotate(-90deg); }
 
 .date {
   font-size: 12px;

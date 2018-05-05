@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+    $('#trackingNumbersButton').on('click', trackPackages);
+    $('#trackingNumbers').on('keyup', function(event) {
+        event.which === 13 && trackPackages();
+    })
+
+    function trackPackages() {
+        var trackingValue = $('#trackingNumbers').val();
+        window.open("https://www.fedex.com/apps/fedextrack/index.html?cntry_code=rs&tracknumbers=" + trackingValue, "_blank");
+    }
+
     var importWizzard = $('#import-wizzard'),
         importWizzardFinish = $('#import-wizzard-finish'),
         importWizzardWrapper = $('.import-wizzard-wrapper'),
