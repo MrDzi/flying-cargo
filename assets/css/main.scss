@@ -17,6 +17,9 @@ body {
     font-size: 16px;
     margin-bottom: 414px;
 	background-color: $gray-lighter;
+	@include bp-small {
+		margin-bottom: 986px;
+	}
 }
 
 a {
@@ -50,6 +53,9 @@ h3 {
 
 h4 {
 	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 ul, ol {
@@ -135,6 +141,7 @@ img {
 		margin-right: 12px !important;
 	}
 	h4 {
+		font-size: 16px;
 		margin-bottom: 0;
 	}
 }
@@ -149,9 +156,9 @@ img {
 	padding: 20px 30px;
 	background: rgba(255,255,255,0.28);
 	margin: 5px;
-	@include border-radius(2px);
 	position: relative;
 	overflow: hidden;
+	@include border-radius(2px);
 	span {
 		position: relative;
 		z-index: 2;
@@ -173,9 +180,14 @@ img {
 		}
 	}
 }
+.text-list {
+	li {
+		margin-bottom: 7px;
+	}
+}
 
 .date {
-    font-size: 12px;
+    font-size: 11px;
 	font-weight: 300;
     color: $gray;
 }
@@ -187,11 +199,7 @@ img {
 }
 
 .info-block {
-    // background-color: $gray-lighter;
-    // padding: $padding;
-    // height: 100%;
 	font-weight: 300;
-    // border-top: 3px solid $blue-light;
     h3 {
         text-align: center;
         margin-bottom: 25px;
@@ -206,19 +214,16 @@ img {
         }
     }
     &--news {
-        // background-color: $gray-dark;
-        // color: #fff;
         img {
             margin-right: 10px;
         }
         a {
             color: $gray-dark;
         }
-        h3:after {
-            background-color: lighten($gray-dark, 10%);
-        }
         h4 {
             font-size: 14px;
+			line-height: 17px;
+			text-align: left;
             font-weight: 600;
             margin-bottom: 0;
         }

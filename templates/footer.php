@@ -1,7 +1,7 @@
     <footer class="main-footer">
         <div class="container">
             <div class="row">
-				<div class="col-3">
+				<div class="col-md-3 col-12">
 					<div class="info-block info-block--contact">
                         <h4>Flying Cargo YU doo</h4>
                         <div class="social-block">
@@ -15,7 +15,7 @@
                         </div>
                     </div>
 				</div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-12">
                         <h4>Filijala Beograd</h4>
                         <ul class="contact-list list-unstyled">
                             <li class="d-flex align-items-center">
@@ -39,7 +39,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-12">
                         <h4>Carinsko odeljenje</h4>
                         <ul class="contact-list list-unstyled">
                             <li class="d-flex align-items-top">
@@ -65,7 +65,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-12">
                         <h4>Filijala Novi Sad</h4>
                         <ul class="contact-list list-unstyled">
                             <li class="d-flex align-items-center">
@@ -112,5 +112,5 @@
         type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     </script>
     <!--End of Zendesk Chat Script-->
-    
+
 </html>

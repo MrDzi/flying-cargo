@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#trackingNumbersButton').on('click', trackPackages);
     $('#trackingNumbers').on('keyup', function(event) {
         event.which === 13 && trackPackages();
-    })
+    });
 
     function trackPackages() {
         var trackingValue = $('#trackingNumbers').val();
@@ -28,35 +28,35 @@ $(document).ready(function() {
     };
 
     var importData = {
-        'senderType': {
-            order: 1,
-            name: 'senderType',
-            question: 'Sender type',
-            description: 'Lorem ipsum dolor sit amet',
-            selectedValue: '',
-            options: {
-                'privateIndividual': {
-                    value: 'privateIndividual',
-                    label: 'Private Individual',
-                    next: function() {
-                        removeNextSiblings($("#senderType" + this.value));
-                        renderNextQuestion('recipientType');
-                        setImportWizzardWrapperHeight();
-                    }
-                },
-                'company': {
-                    value: 'company',
-                    label: 'Company',
-                    next: function() {
-                        removeNextSiblings($("#senderType" + this.value));
-                        renderNextQuestion('recipientType');
-                        setImportWizzardWrapperHeight();
-                    }
-                }
-            }
-        },
+        // 'senderType': {
+        //     order: 1,
+        //     name: 'senderType',
+        //     question: 'Sender type',
+        //     description: 'Lorem ipsum dolor sit amet',
+        //     selectedValue: '',
+        //     options: {
+        //         'privateIndividual': {
+        //             value: 'privateIndividual',
+        //             label: 'Private Individual',
+        //             next: function() {
+        //                 removeNextSiblings($("#senderType" + this.value));
+        //                 renderNextQuestion('recipientType');
+        //                 setImportWizzardWrapperHeight();
+        //             }
+        //         },
+        //         'company': {
+        //             value: 'company',
+        //             label: 'Company',
+        //             next: function() {
+        //                 removeNextSiblings($("#senderType" + this.value));
+        //                 renderNextQuestion('recipientType');
+        //                 setImportWizzardWrapperHeight();
+        //             }
+        //         }
+        //     }
+        // },
         'recipientType': {
-            order: 2,
+            order: 1,
             name: 'recipientType',
             question: 'Recipient type',
             description: 'Lorem ipsum dolor sit amet',
@@ -83,24 +83,24 @@ $(document).ready(function() {
             }
         },
         'value': {
-            order: 3,
+            order: 2,
             name: 'value',
             question: 'Value',
             description: 'Lorem ipsum dolor sit amet',
             selectedValue: '',
             options: {
-                'under50': {
-                    value: 'under50',
-                    label: '50 or below',
+                'under70': {
+                    value: 'under70',
+                    label: '70 or below',
                     next: function() {
                         removeNextSiblings($("#value" + this.value));
                         renderNextQuestion('clearanceType');
                         setImportWizzardWrapperHeight();
                     }
                 },
-                'over50': {
-                    value: 'over50',
-                    label: '50 or below',
+                'over70': {
+                    value: 'over70',
+                    label: '70 or below',
                     next: function() {
                         removeNextSiblings($("#value" + this.value));
                         renderNextQuestion('clearanceType');
@@ -110,7 +110,7 @@ $(document).ready(function() {
             }
         },
         'clearanceType': {
-            order: 4,
+            order: 3,
             name: 'clearanceType',
             question: 'Clearance type',
             description: 'Lorem ipsum dolor sit amet',

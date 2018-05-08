@@ -4,6 +4,10 @@
 .mt-40 {
   margin-top: 40px; }
 
+.pl-pr-40 {
+  padding-left: 40px;
+  padding-right: 40px; }
+
 .full-width {
   width: 100%; }
 
@@ -391,12 +395,16 @@ select {
   .main-footer h4 {
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    text-align: left; }
   .main-footer .small {
     color: #9E9E9E; }
 
 .contact-list {
   color: #D5D5D5; }
+  @media only screen and (max-width: 768px) {
+    .contact-list {
+      margin-bottom: 30px; } }
 
 .nav {
   margin-right: 10px; }
@@ -406,6 +414,10 @@ select {
 
 .mt-40 {
   margin-top: 40px; }
+
+.pl-pr-40 {
+  padding-left: 40px;
+  padding-right: 40px; }
 
 .full-width {
   width: 100%; }
@@ -518,6 +530,15 @@ select {
   overflow: hidden !important;
   height: 100%; }
 
+.posts-list__post-content h4 {
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 10px; }
+
+.posts-list__post-content p {
+  font-size: 14px;
+  margin-bottom: 5px; }
+
 .post-excerpt {
   border-bottom: 1px solid #F3F5F8;
   margin-bottom: 30px; }
@@ -584,6 +605,9 @@ body {
   font-size: 16px;
   margin-bottom: 414px;
   background-color: #F3F5F8; }
+  @media only screen and (max-width: 768px) {
+    body {
+      margin-bottom: 986px; } }
 
 a {
   font-weight: bold;
@@ -613,7 +637,10 @@ h3 {
     background-color: #D5D5D5; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; }
 
 ul, ol {
   margin-bottom: 0; }
@@ -680,6 +707,7 @@ img {
     color: #F6D22F;
     margin-right: 12px !important; }
   .collapsible-block__header h4 {
+    font-size: 16px;
     margin-bottom: 0; }
 
 .collapsible-block {
@@ -691,13 +719,13 @@ img {
   padding: 20px 30px;
   background: rgba(255, 255, 255, 0.28);
   margin: 5px;
+  position: relative;
+  overflow: hidden;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
-  border-radius: 2px;
-  position: relative;
-  overflow: hidden; }
+  border-radius: 2px; }
   .text-card-item span {
     position: relative;
     z-index: 2; }
@@ -716,8 +744,11 @@ img {
     .text-card-item i.rotate-90 {
       transform: rotate(-90deg); }
 
+.text-list li {
+  margin-bottom: 7px; }
+
 .date {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 300;
   color: #9E9E9E; }
 
@@ -742,10 +773,10 @@ img {
     margin-right: 10px; }
   .info-block--news a {
     color: #404040; }
-  .info-block--news h3:after {
-    background-color: #5a5a5a; }
   .info-block--news h4 {
     font-size: 14px;
+    line-height: 17px;
+    text-align: left;
     font-weight: 600;
     margin-bottom: 0; }
   .info-block--contact h4 {

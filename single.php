@@ -11,7 +11,7 @@
 <!-- Content section STARTS -->
 <div class="container pb-50">
     <div class="row">
-        <div class="col-9">
+        <div class="col-8">
             <section class="section section--single">
                 <div class="post-excerpt">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
@@ -28,7 +28,7 @@
 
             </section>
         </div>
-        <div class="col-3">
+        <div class="col-4">
             <div class="main-sidebar">
                 <div class="info-block info-block--news">
                     <h3>Recent News</h3>
@@ -36,7 +36,7 @@
                         <li class="mb-3">
                             <article class="news-list__article--sidebar">
                                 <a href="#" class="d-flex flex-start">
-                                    <img src="http://lorempixel.com/110/90" alt="">
+                                    <img src="http://lorempixel.com/120/90" alt="">
                                     <div class="news-list__article-content">
                                         <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
                                         <span class="date">11.11.2017.</span>
@@ -47,7 +47,7 @@
                         <li class="mb-3">
                             <article class="news-list__article--sidebar">
                                 <a href="#" class="d-flex flex-start">
-                                    <img src="http://lorempixel.com/110/90" alt="">
+                                    <img src="http://lorempixel.com/120/90" alt="">
                                     <div class="news-list__article-content">
                                         <h4>From Engines to Tail Lights, FedEx Technicians’ Knowledge On Display</h4>
                                         <span class="date">11.11.2017.</span>
@@ -58,7 +58,7 @@
                         <li class="mb-3">
                             <article class="news-list__article--sidebar">
                                 <a href="#" class="d-flex flex-start">
-                                    <img src="http://lorempixel.com/110/90" alt="">
+                                    <img src="http://lorempixel.com/120/90" alt="">
                                     <div class="news-list__article-content">
                                         <h4>FedEx and UPS: Competing CEOs Agree on Reforms</h4>
                                         <span class="date">11.11.2017.</span>

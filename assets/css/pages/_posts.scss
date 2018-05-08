@@ -37,6 +37,18 @@
     height: 100%;
 }
 
+.posts-list__post-content {
+    h4 {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
+
 .post-excerpt {
     border-bottom: 1px solid $gray-lighter;
     margin-bottom: 30px;

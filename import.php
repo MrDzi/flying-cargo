@@ -13,7 +13,7 @@
     <div class="container">
         <h3>Importing to Serbia</h3>
         <p>Očekujete paket iz inostranstva a još uvek niste izabrali zastupnika u carinskom postupku? Kompanija FedEx nudi Vam i uslugu uvoznog carinjenja. Iskustvo od preko 15 godina u Srbiji osiguralo nam je odlično poznavanje carinskih regulativa. Šta nas razlikuje od drugih:</p>
-        <ul>
+        <ul class="text-list">
             <li>Dobro umrežen operativni sistem na globalnom nivou</li>
             <li>Briga i pristupačnost Carinskog odeljenja</li>
             <li>Mogućnost praćenja Vaših pošiljaka u svakom trenutku</li>
@@ -45,14 +45,9 @@
         <div class="collapsible-block-wrapper">
             <div class="collapsible-block__header d-flex align-items-center" data-toggle="collapse" href="#collapse1">
                 <i class="mdi mdi-plus-circle small-icon mr-2"></i>
-                <h4>Kako da pošaljem umetničko delo u inostranstvo?</h4>
+                <h4>Zašto moram da popunjavam dokumentaciju za carinjenje pošiljke?</h4>
             </div>
-            <div class="collapse collapsible-block" id="collapse1">Za otpremanje umetničkih dela u inostranstvo, najpre će Vam biti potrebna dozvola za izvoz Zavoda za zaštitu spomenika kulture http://www.heritage.gov.rs . Sva umetnička dela podležu izvoznom carinjenju. Kompanija FedEx nudi Vam potpuno besplatnu uslugu izvoznog carinjenja. Pored dozvole, dokumentacija neophodna za izvoz je u nastavku:
-                -	Profaktura/Faktura
-                -	Kopija lične karte ili pasoša
-                -	Nalog za carinjenje
-                -	Isprava o zastupanju
-            Za dodatne informacije I savete u vezi otpremanja paketa molimo Vas da kontaktirate korisnički servis putem e-maila csa@flying-cargo.rs ili telefona 011/3109-400.
+            <div class="collapse collapsible-block" id="collapse1">Dokumentaciju za carinjenje popunjava lično primalac radi verodostojnosti podataka koji se navode kroz izjave i prilaže istu pod punom odgovornošću.
             </div>
         </div>
         <div class="collapsible-block-wrapper">
