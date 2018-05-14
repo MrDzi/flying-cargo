@@ -11,22 +11,22 @@
 <!-- Content section STARTS -->
 <section class="section section--regular">
     <div class="container">
-        <h3>Importing to Serbia</h3>
+        <!-- <h3>Importing to Serbia</h3> -->
         <p>Očekujete paket iz inostranstva a još uvek niste izabrali zastupnika u carinskom postupku? Kompanija FedEx nudi Vam i uslugu uvoznog carinjenja. Iskustvo od preko 15 godina u Srbiji osiguralo nam je odlično poznavanje carinskih regulativa. Šta nas razlikuje od drugih:</p>
-        <ul class="text-list">
-            <li>Dobro umrežen operativni sistem na globalnom nivou</li>
-            <li>Briga i pristupačnost Carinskog odeljenja</li>
-            <li>Mogućnost praćenja Vaših pošiljaka u svakom trenutku</li>
-            <li>Blagovremena obaveštenja o prispeću Vaših pošiljaka</li>
-            <li>Brzo i efikasno okončanje carinskih postupaka</li>
-            <li>Isporuka „od vrata do vrata“</li>
+        <ul class="list-unstyled">
+            <li class="icon-item"><i class="mdi mdi-check"></i>Dobro umrežen operativni sistem na globalnom nivou</li>
+            <li class="icon-item"><i class="mdi mdi-check"></i>Briga i pristupačnost Carinskog odeljenja</li>
+            <li class="icon-item"><i class="mdi mdi-check"></i>Mogućnost praćenja Vaših pošiljaka u svakom trenutku</li>
+            <li class="icon-item"><i class="mdi mdi-check"></i>Blagovremena obaveštenja o prispeću Vaših pošiljaka</li>
+            <li class="icon-item"><i class="mdi mdi-check"></i>Brzo i efikasno okončanje carinskih postupaka</li>
+            <li class="icon-item"><i class="mdi mdi-check"></i>Isporuka „od vrata do vrata“</li>
         </ul>
     </div>
 </section>
 <!-- Content section ENDS -->
 
 <!-- Import/export wizzard section START -->
-<div class="section section--gray">
+<div class="section section--gray pb-30">
     <div class="container">
         <div class="import-wrapper import-wizzard-wrapper">
             <div id="import-wizzard"></div>
@@ -47,7 +47,8 @@
                 <i class="mdi mdi-plus-circle small-icon mr-2"></i>
                 <h4>Zašto moram da popunjavam dokumentaciju za carinjenje pošiljke?</h4>
             </div>
-            <div class="collapse collapsible-block" id="collapse1">Dokumentaciju za carinjenje popunjava lično primalac radi verodostojnosti podataka koji se navode kroz izjave i prilaže istu pod punom odgovornošću.
+            <div class="collapse collapsible-block" id="collapse1">
+                <p>Dokumentaciju za carinjenje popunjava lično primalac radi verodostojnosti podataka koji se navode kroz izjave i prilaže istu pod punom odgovornošću.</p>
             </div>
         </div>
         <div class="collapsible-block-wrapper">
@@ -55,7 +56,8 @@
                 <i class="mdi mdi-plus-circle small-icon mr-2"></i>
                 <h4>Zašto se naplaćuju troškovi zastupanja u procesu carinjenja?</h4>
             </div>
-            <div class="collapse collapsible-block" id="collapse2">Troškovi koji nastaju prilikom redovnog carinjenja pošiljke su troškovi carinskog zastupanja u procesu samog carinjenja robe. Carinski zastupnici naše kompanije u procesu carinjenja pošiljke izrađuju deklaraciju sa kojom vrše carinjenje pošiljke.
+            <div class="collapse collapsible-block" id="collapse2">
+                <p>Troškovi koji nastaju prilikom redovnog carinjenja pošiljke su troškovi carinskog zastupanja u procesu samog carinjenja robe. Carinski zastupnici naše kompanije u procesu carinjenja pošiljke izrađuju deklaraciju sa kojom vrše carinjenje pošiljke.</p>
             </div>
         </div>
         <div class="collapsible-block-wrapper">
@@ -63,7 +65,8 @@
                 <i class="mdi mdi-plus-circle small-icon mr-2"></i>
                 <h4>Zašto se naplaćuju usluge zastupanja u carinskom postupku, ako sam pošiljku platio ino-pošiljaocu po sistemu isporuke „od vrata do vrata“?</h4>
             </div>
-            <div class="collapse collapsible-block" id="collapse3">Isporuka “od vrata do vrata“ podrazumeva da se nakon carinskog postupanja sa pošiljkom roba isporuči na adresu primaoca, ali nije oslobođena uvoznih procedura i dažbina.
+            <div class="collapse collapsible-block" id="collapse3">
+                <p>Isporuka “od vrata do vrata“ podrazumeva da se nakon carinskog postupanja sa pošiljkom roba isporuči na adresu primaoca, ali nije oslobođena uvoznih procedura i dažbina.</p>
             </div>
         </div>
         <div class="collapsible-block-wrapper">
@@ -71,7 +74,8 @@
                 <i class="mdi mdi-plus-circle small-icon mr-2"></i>
                 <h4>Zašto troškovi transporta, osiguranja i ostali troškovi koji su naznačeni na fakturi ulaze u carinsku i poresku osnovicu?</h4>
             </div>
-            <div class="collapse collapsible-block" id="collapse4">Svi troškovi koji  su iskazani na profakturi ili fakturi koju šalje ino pošiljalac ulaze u obračun carinskog duga po zakonu Republike Srbije.
+            <div class="collapse collapsible-block" id="collapse4">
+                <p>Svi troškovi koji  su iskazani na profakturi ili fakturi koju šalje ino pošiljalac ulaze u obračun carinskog duga po zakonu Republike Srbije.</p>
             </div>
         </div>
         <div class="collapsible-block-wrapper">
@@ -79,7 +83,8 @@
                 <i class="mdi mdi-plus-circle small-icon mr-2"></i>
                 <h4>Zbog čega je cena carine I PDV veća od vrednosti robe koju sam poručio preko interneta?</h4>
             </div>
-            <div class="collapse collapsible-block" id="collapse5">Jedan od razloga koji može dovesti do toga da iznos dažbina bude veći nego vrednost robe, jeste slučaj kada pristigla roba podleže naplati carine I PDV-a, a u carinsku osnovicu uđe I trošak poštarine. Usluge brze pošte, odnosno ekspresnih kurirskih službi čije pošiljke imaju prioritetni status, skuplje su u odnosu na običnu poštu, a samim tim I carinska osnovica može biti podignuta. Ova informacija istaknuta je I na sajtu Uprave Carine.
+            <div class="collapse collapsible-block" id="collapse5">
+                <p>Jedan od razloga koji može dovesti do toga da iznos dažbina bude veći nego vrednost robe, jeste slučaj kada pristigla roba podleže naplati carine I PDV-a, a u carinsku osnovicu uđe I trošak poštarine. Usluge brze pošte, odnosno ekspresnih kurirskih službi čije pošiljke imaju prioritetni status, skuplje su u odnosu na običnu poštu, a samim tim I carinska osnovica može biti podignuta. Ova informacija istaknuta je I na sajtu Uprave Carine.</p>
             </div>
         </div>
     </div>
@@ -87,7 +92,7 @@
 <!-- FAQ section ENDS -->
 
 <!-- Forbidden Goods section STARTS -->
-<div class="section section--bkg-image">
+<div class="section section--bkg-image section--bkg-image-2">
     <div class="container">
         <h3>Forbidden Goods</h3>
         <div class="d-flex justify-content-center flex-wrap">

@@ -8,7 +8,7 @@
     <div class="tracking-block">
         <div class="d-flex justify-content-between align-items-center mt-2">
             <input class="input input--tracking" type="text" id="trackingNumbers" name="trackingNumbers" placeholder="Enter tracking number(s)"></input>
-            <button id="trackingNumbersButton" class="button button--primary button--big">Track ...</button>
+            <button id="trackingNumbersButton" class="button button--primary button--big">Track package</button>
         </div>
         <!-- <div class="tracking-block__info">
             Track up to 10 numbers at a time, separate with a comma or Enter.

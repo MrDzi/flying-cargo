@@ -1,7 +1,7 @@
 <?php include('templates/header.php'); ?>
 
 <!-- Page title section STARTS -->
-<div class="page-title">
+<div class="page-title page-title--has-overlaping-block">
     <div class="container">
         <h1>About Us</h1>
     </div>

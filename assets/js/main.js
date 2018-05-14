@@ -121,9 +121,9 @@ $(document).ready(function() {
                     label: 'Flying Cargo',
                     next: function() {
                         removeNextSiblings($("#clearanceType" + this.value));
-                        if (importData['senderType'].selectedValue === "company" && importData['recipientType'].selectedValue === "company") {
+                        if (importData['recipientType'].selectedValue === "company") {
                             appendToWizzardFinishAndAnimate('Text 1');
-                        } else if (importData['senderType'].selectedValue === "company" || importData['recipientType'].selectedValue === "company") {
+                        } else if (importData['recipientType'].selectedValue === "company") {
                             appendToWizzardFinishAndAnimate('Text 2');
                         };
                     }
@@ -133,9 +133,9 @@ $(document).ready(function() {
                     label: 'Other Company',
                     next: function() {
                         removeNextSiblings($("#clearanceType" + this.value));
-                        if (importData['senderType'].selectedValue === "company" && importData['recipientType'].selectedValue === "company") {
+                        if (importData['recipientType'].selectedValue === "company") {
                             appendToWizzardFinishAndAnimate('Text 3');
-                        } else if (importData['senderType'].selectedValue === "company" || importData['recipientType'].selectedValue === "company") {
+                        } else if (importData['recipientType'].selectedValue === "company") {
                             appendToWizzardFinishAndAnimate('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.');
                         };
                     }
@@ -145,9 +145,9 @@ $(document).ready(function() {
                     label: 'You',
                     next: function() {
                         removeNextSiblings($("#clearanceType" + this.value));
-                        if (importData['senderType'].selectedValue === "company" && importData['recipientType'].selectedValue === "company") {
+                        if (importData['recipientType'].selectedValue === "company") {
                             appendToWizzardFinishAndAnimate('Text 5');
-                        } else if (importData['senderType'].selectedValue === "company" || importData['recipientType'].selectedValue === "company") {
+                        } else if (importData['recipientType'].selectedValue === "company") {
                             appendToWizzardFinishAndAnimate('Text 6');
                         };
                     }
@@ -157,7 +157,7 @@ $(document).ready(function() {
     };
 
     function setImportWizzardWrapperHeight() {
-        let importWizzardHeight = getElemHeight(importWizzard);
+        let importWizzardHeight = getElemHeight(importWizzard) + 10;
         return setElemHeight(importWizzardWrapper, importWizzardHeight);
     };
 
@@ -167,8 +167,8 @@ $(document).ready(function() {
     }
 
     function init() {
-        renderFormGroup(createFormGroupElement(importData['senderType']));
-        addNewChangeListener(importData['senderType']);
+        renderFormGroup(createFormGroupElement(importData['recipientType']));
+        addNewChangeListener(importData['recipientType']);
         setImportWizzardWrapperHeight();
     }
     init();

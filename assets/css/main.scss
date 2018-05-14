@@ -14,7 +14,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     color: $black;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 414px;
 	background-color: $gray-lighter;
 	@include bp-small {
@@ -54,7 +54,7 @@ h3 {
 h4 {
 	font-size: 18px;
 	font-weight: bold;
-	text-align: center;
+	// text-align: center;
 	margin-bottom: 20px;
 }
 
@@ -67,11 +67,18 @@ img {
 	max-width: 100%;
 }
 
+// .container {
+//     max-width: 1200px !important;
+// }
+
 .page-title {
-    padding: 80px 0 130px;
+    padding: 120px 0;
     background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/hero-bkg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+	&--has-overlaping-block {
+		padding-bottom: 170px;
+	}
     h1 {
         font-size: 40px;
         color: #fff;
@@ -87,7 +94,7 @@ img {
 
 .section {
     position: relative;
-    padding: 40px 0;
+    padding: 35px 0;
 	background: #fff;
 	img {
 		margin: 10px 0 30px;
@@ -116,25 +123,35 @@ img {
 			background-color: $gray;
 		}
 	}
+	&--content {
+		background: $gray-lighter;
+	    padding: 0 0 20px;
+	}
 	&--bkg-image {
-		background: url('../img/blurred.png');
+		background: url('../img/bkg-img.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		padding: 80px 0;
+		padding: 60px 0;
 		h3 {
 			color: #fff;
 		}
 	}
+	&--bkg-image-2 {
+		background: url('../img/bkg-img-2.jpg');
+	}
+	&--bkg-image-3 {
+		background: url('../img/bkg-img-3.jpg');
+	}
 }
 
-.collapsible-block-wrapper {
-	padding-top: 20px;
+.collapsible-block-wrapper:not(:first-of-type) {
+	padding-top: 10px;
 }
 
 .collapsible-block__header {
 	cursor: pointer;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	i {
 		font-size: 22px;
 		color: $yellow;
@@ -190,12 +207,6 @@ img {
     font-size: 11px;
 	font-weight: 300;
     color: $gray;
-}
-
-// Content section
-.section--content {
-	background: $gray-lighter;
-    padding: 0 0 70px;
 }
 
 .info-block {
@@ -273,4 +284,14 @@ img {
 .meshim_widget_components_chatWindow_MainStack.ms_br {
 	border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+}
+
+.icon-item {
+	display: flex;
+	align-items: center;
+	i {
+		font-size: 22px;
+		color: $blue-light;
+		margin-right: 8px;
+	}
 }

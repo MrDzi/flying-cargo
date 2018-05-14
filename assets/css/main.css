@@ -11,6 +11,9 @@
 .full-width {
   width: 100%; }
 
+.full-height {
+  height: 100%; }
+
 .pl-0 {
   padding-left: 0; }
 
@@ -38,6 +41,9 @@
 .mt-20 {
   margin-top: 20px; }
 
+.mb-20 {
+  margin-bottom: 20px; }
+
 .font-14 {
   font-size: 14px !important; }
 
@@ -50,6 +56,9 @@
 .pt-50 {
   padding-top: 50px; }
 
+.pb-30 {
+  padding-bottom: 30px; }
+
 .wp-caption-text {
   font-size: 14px;
   color: #999;
@@ -61,6 +70,12 @@
 
 .flex-start {
   align-items: flex-start; }
+
+.bkg-gray {
+  background: #F3F5F8; }
+
+.list-unstyled {
+  list-style: none; }
 
 @media only screen and (max-width: 960px) {
   .info-blocks-wrapper .col-12 {
@@ -127,7 +142,7 @@
   transition: border-color 0.15s ease-in; }
   .input:focus {
     outline: none;
-    border-color: #2A2A2A; }
+    border-color: #262626; }
   .input.placeholder {
     font-size: 14px;
     font-weight: 300;
@@ -165,7 +180,7 @@ select {
   transition: border-color 0.15s ease-in; }
   select:focus {
     outline: none;
-    border-color: #2A2A2A; }
+    border-color: #262626; }
   select.placeholder {
     font-size: 14px;
     color: #D5D5D5; }
@@ -422,6 +437,9 @@ select {
 .full-width {
   width: 100%; }
 
+.full-height {
+  height: 100%; }
+
 .pl-0 {
   padding-left: 0; }
 
@@ -449,6 +467,9 @@ select {
 .mt-20 {
   margin-top: 20px; }
 
+.mb-20 {
+  margin-bottom: 20px; }
+
 .font-14 {
   font-size: 14px !important; }
 
@@ -461,6 +482,9 @@ select {
 .pt-50 {
   padding-top: 50px; }
 
+.pb-30 {
+  padding-bottom: 30px; }
+
 .wp-caption-text {
   font-size: 14px;
   color: #999;
@@ -472,6 +496,12 @@ select {
 
 .flex-start {
   align-items: flex-start; }
+
+.bkg-gray {
+  background: #F3F5F8; }
+
+.list-unstyled {
+  list-style: none; }
 
 @media only screen and (max-width: 960px) {
   .info-blocks-wrapper .col-12 {
@@ -601,8 +631,8 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #2A2A2A;
-  font-size: 16px;
+  color: #262626;
+  font-size: 15px;
   margin-bottom: 414px;
   background-color: #F3F5F8; }
   @media only screen and (max-width: 768px) {
@@ -639,7 +669,6 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 20px; }
 
 ul, ol {
@@ -649,10 +678,12 @@ img {
   max-width: 100%; }
 
 .page-title {
-  padding: 80px 0 130px;
+  padding: 120px 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bkg.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+  .page-title--has-overlaping-block {
+    padding-bottom: 170px; }
   .page-title h1 {
     font-size: 40px;
     color: #fff;
@@ -665,7 +696,7 @@ img {
 
 .section {
   position: relative;
-  padding: 40px 0;
+  padding: 35px 0;
   background: #fff; }
   .section img {
     margin: 10px 0 30px; }
@@ -683,25 +714,32 @@ img {
     margin-top: -50px;
     padding: 40px; }
   .section--faq {
-    background: #2A2A2A;
+    background: #262626;
     color: #fff; }
     .section--faq h3:after {
       background-color: #9E9E9E; }
+  .section--content {
+    background: #F3F5F8;
+    padding: 0 0 20px; }
   .section--bkg-image {
-    background: url("../img/blurred.png");
+    background: url("../img/bkg-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 80px 0; }
+    padding: 60px 0; }
     .section--bkg-image h3 {
       color: #fff; }
+  .section--bkg-image-2 {
+    background: url("../img/bkg-img-2.jpg"); }
+  .section--bkg-image-3 {
+    background: url("../img/bkg-img-3.jpg"); }
 
-.collapsible-block-wrapper {
-  padding-top: 20px; }
+.collapsible-block-wrapper:not(:first-of-type) {
+  padding-top: 10px; }
 
 .collapsible-block__header {
   cursor: pointer;
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
   .collapsible-block__header i {
     font-size: 22px;
     color: #F6D22F;
@@ -751,10 +789,6 @@ img {
   font-size: 11px;
   font-weight: 300;
   color: #9E9E9E; }
-
-.section--content {
-  background: #F3F5F8;
-  padding: 0 0 70px; }
 
 .info-block {
   font-weight: 300; }
@@ -813,3 +847,11 @@ img {
 .meshim_widget_components_chatWindow_MainStack.ms_br {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px; }
+
+.icon-item {
+  display: flex;
+  align-items: center; }
+  .icon-item i {
+    font-size: 22px;
+    color: #1896D4;
+    margin-right: 8px; }

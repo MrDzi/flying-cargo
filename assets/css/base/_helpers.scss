@@ -11,6 +11,10 @@
     width: 100%;
 }
 
+.full-height {
+	height: 100%;
+}
+
 .pl-0 {
     padding-left: 0;
 }
@@ -46,6 +50,10 @@
 	margin-top: 20px;
 }
 
+.mb-20 {
+	margin-bottom: 20px;
+}
+
 .font-14 {
     font-size: 14px !important;
 }
@@ -62,6 +70,10 @@
 	padding-top: 50px;
 }
 
+.pb-30 {
+	padding-bottom: 30px;
+}
+
 .wp-caption-text {
 	font-size: 14px;
 	color: #999;
@@ -74,4 +86,11 @@
 
 .flex-start {
 	align-items: flex-start;
+}
+
+.bkg-gray {
+	background: $gray-lighter;
+}
+.list-unstyled {
+	list-style: none;
 }
