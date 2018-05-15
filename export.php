@@ -17,7 +17,7 @@
             <p>Istražite izvozni servis:</p>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <div class="bkg-gray p-30 full-height">
                     <h4 class="text-center">FedEx International Priority servis</h4>
                     <p>Svet nikada nije bio bliže. Pošiljke do <strong>68kg</strong> putuju ekspresno do nekih od najudaljenijih zemalja. Ovim servisom dobićete:</p>
@@ -31,7 +31,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <div class="bkg-gray p-30 full-height">
                     <h4 class="text-center">FedEx International Priority Freight servis</h4>
                     <p>Ne brinite se, niste ograničeni sa slanjem pošiljaka teških do <strong>68kg</strong> - mislili smo na sve. Umetnička dela, velike porudžbine Vaših klijenata? Naravno! Ovaj servis upravo je namenjen pošiljkama koje prelaze <strong>68kg</strong> kao i standardne dimenzije pakovanja. IPF servis dostupan je u preko 130 zemalja širom sveta.</p>
@@ -157,13 +157,13 @@
     <div class="container">
         <!-- <h3>Countries not served</h3> -->
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3 col-12">
                 <div class="icon-item">
                     <i class="mdi mdi-earth"></i>
                     <strong>Countries not served: </strong>
                 </div>
             </div>
-            <div class="col-9 d-flex align-items-center">
+            <div class="col-md-9 col-12 d-flex align-items-center">
                 Burma (MM), Central African Republic (CF), Comoros, Cuba, Equatorial Guinea (GQ), Falklands, Guinea Bissau (GW), Iran, Johnston Island, Kiribati, North Korea, Mayotte Island, Myanmar (MM), Nauru, Niue, Saint Pierre et Miquelon, Sao Tome & Principe, Sierra Leone (SL), Somalia, St. Helena (S. Atlantic), Sudan (SD), Syria, Tajikistan, Tokelau Islands, Turkmenistan (TM), Tuvalu, Wake Islands, Yemen (YE)
             </div>
         </div>

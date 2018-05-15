@@ -11,7 +11,7 @@
 <!-- Content section STARTS -->
 <div class="container pb-50">
     <div class="row">
-        <div class="col-8">
+        <div class="col-md-8 col-12">
             <section class="section section--single">
                 <div class="post-excerpt">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
@@ -28,7 +28,7 @@
 
             </section>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-12">
             <div class="main-sidebar">
                 <div class="info-block info-block--news">
                     <h3>Recent News</h3>

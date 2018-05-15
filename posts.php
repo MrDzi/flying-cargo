@@ -12,7 +12,7 @@
 <section class="section section--regular">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-lg-6 col-12 mb-4">
                 <article class="posts-list__post d-flex">
                     <a href="single.php"></a>
                     <div class="posts-list__post-image"></div>
@@ -23,7 +23,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-lg-6 col-12 mb-4">
                 <article class="posts-list__post d-flex">
                     <a href="#"></a>
                     <div class="posts-list__post-image"></div>
@@ -34,7 +34,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-lg-6 col-12 mb-4">
                 <article class="posts-list__post d-flex">
                     <a href="#"></a>
                     <div class="posts-list__post-image"></div>
@@ -45,7 +45,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-lg-6 col-12 mb-4">
                 <article class="posts-list__post d-flex">
                     <a href="#"></a>
                     <div class="posts-list__post-image"></div>
