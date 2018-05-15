@@ -28,35 +28,37 @@ $(document).ready(function() {
     };
 
     var importData = {
-        // 'senderType': {
-        //     order: 1,
-        //     name: 'senderType',
-        //     question: 'Sender type',
-        //     description: 'Lorem ipsum dolor sit amet',
-        //     selectedValue: '',
-        //     options: {
-        //         'privateIndividual': {
-        //             value: 'privateIndividual',
-        //             label: 'Private Individual',
-        //             next: function() {
-        //                 removeNextSiblings($("#senderType" + this.value));
-        //                 renderNextQuestion('recipientType');
-        //                 setImportWizzardWrapperHeight();
-        //             }
-        //         },
-        //         'company': {
-        //             value: 'company',
-        //             label: 'Company',
-        //             next: function() {
-        //                 removeNextSiblings($("#senderType" + this.value));
-        //                 renderNextQuestion('recipientType');
-        //                 setImportWizzardWrapperHeight();
-        //             }
-        //         }
-        //     }
-        // },
-        'recipientType': {
+        'senderType': {
             order: 1,
+            name: 'senderType',
+            question: 'Sender type',
+            description: 'Lorem ipsum dolor sit amet',
+            selectedValue: '',
+            options: {
+                'privateIndividual': {
+                    value: 'privateIndividual',
+                    label: 'Private Individual',
+                    next: function() {
+                        removeNextSiblings($("#senderType" + this.value));
+                        setValueToOption(70);
+                        renderNextQuestion('recipientType', 'company');
+                        setImportWizzardWrapperHeight();
+                    }
+                },
+                'company': {
+                    value: 'company',
+                    label: 'Company',
+                    next: function() {
+                        removeNextSiblings($("#senderType" + this.value));
+                        setValueToOption(50);
+                        renderNextQuestion('recipientType');
+                        setImportWizzardWrapperHeight();
+                    }
+                }
+            }
+        },
+        'recipientType': {
+            order: 2,
             name: 'recipientType',
             question: 'Recipient type',
             description: 'Lorem ipsum dolor sit amet',
@@ -83,24 +85,22 @@ $(document).ready(function() {
             }
         },
         'value': {
-            order: 2,
+            order: 3,
             name: 'value',
             question: 'Value',
             description: 'Lorem ipsum dolor sit amet',
             selectedValue: '',
             options: {
-                'under70': {
-                    value: 'under70',
-                    label: '70 or below',
+                '1': {
+                    value: '1',
                     next: function() {
                         removeNextSiblings($("#value" + this.value));
                         renderNextQuestion('clearanceType');
                         setImportWizzardWrapperHeight();
                     }
                 },
-                'over70': {
-                    value: 'over70',
-                    label: '70 or below',
+                '2': {
+                    value: '2',
                     next: function() {
                         removeNextSiblings($("#value" + this.value));
                         renderNextQuestion('clearanceType');
@@ -110,7 +110,7 @@ $(document).ready(function() {
             }
         },
         'clearanceType': {
-            order: 3,
+            order: 4,
             name: 'clearanceType',
             question: 'Clearance type',
             description: 'Lorem ipsum dolor sit amet',
@@ -167,23 +167,28 @@ $(document).ready(function() {
     }
 
     function init() {
-        renderFormGroup(createFormGroupElement(importData['recipientType']));
-        addNewChangeListener(importData['recipientType']);
+        renderFormGroup(createFormGroupElement(importData['senderType']));
+        addNewChangeListener(importData['senderType']);
         setImportWizzardWrapperHeight();
     }
     init();
 
-    function createFormGroupElement(formGroup) {
+    function createFormGroupElement(formGroup, excludeOption) {
 
-        var inputs = Object.keys(formGroup.options).map(function(key) {
-            return "<div class='form-check-input-wrapper'><input class='form-check-input' type='radio' name='" + formGroup.name
-            + "' value='" + formGroup.options[key].value
-            + "' id='" + formGroup.name + formGroup.options[key].value + "'>"
-            + "<label class='form-check-label' for='" + formGroup.name + formGroup.options[key].value
-            + "'>" + formGroup.options[key].label + "</label><i class='fa fa-check-circle' aria-hidden='true'></i></div>";
-        }).reduce(function(acc, currentVal) {
-            return acc + currentVal;
-        });
+        var inputs = Object.keys(formGroup.options)
+            .filter(function(key) {
+                return key !== excludeOption;
+            })
+            .map(function(key) {
+                return "<div class='form-check-input-wrapper'><input class='form-check-input' type='radio' name='" + formGroup.name
+                + "' value='" + formGroup.options[key].value
+                + "' id='" + formGroup.name + formGroup.options[key].value + "'>"
+                + "<label class='form-check-label' for='" + formGroup.name + formGroup.options[key].value
+                + "'>" + formGroup.options[key].label + "</label><i class='fa fa-check-circle' aria-hidden='true'></i></div>";
+            })
+            .reduce(function(acc, currentVal) {
+                return acc + currentVal;
+            });
 
         var formGroupHtml =
         "<div class='form-group'>"
@@ -194,6 +199,11 @@ $(document).ready(function() {
         + "</div></div>";
 
         return formGroupHtml;
+    }
+
+    function setValueToOption(value) {
+        importData['value'].options['1'].label = 'Under ' + value;
+        importData['value'].options['2'].label = 'Over ' + value;
     }
 
     function renderFormGroup(formGroupHtml) {
@@ -215,9 +225,9 @@ $(document).ready(function() {
         importData[name].selectedValue = '';
     }
 
-    function renderNextQuestion(name) {
-        clearSelectedValue(name)
-        renderFormGroup(createFormGroupElement(importData[name]));
+    function renderNextQuestion(name, excludeOption, setValue) {
+        clearSelectedValue(name);
+        renderFormGroup(createFormGroupElement(importData[name], excludeOption, setValue));
         addNewChangeListener(importData[name]);
     }
 
