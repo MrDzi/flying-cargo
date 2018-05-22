@@ -163,12 +163,37 @@
                     <strong>Countries not served: </strong>
                 </div>
             </div>
-            <div class="col-md-9 col-12 d-flex align-items-center">
+            <div class="col-md-9 col-12 d-flex align-items-center pt-7">
                 Burma (MM), Central African Republic (CF), Comoros, Cuba, Equatorial Guinea (GQ), Falklands, Guinea Bissau (GW), Iran, Johnston Island, Kiribati, North Korea, Mayotte Island, Myanmar (MM), Nauru, Niue, Saint Pierre et Miquelon, Sao Tome & Principe, Sierra Leone (SL), Somalia, St. Helena (S. Atlantic), Sudan (SD), Syria, Tajikistan, Tokelau Islands, Turkmenistan (TM), Tuvalu, Wake Islands, Yemen (YE)
             </div>
         </div>
     </div>
 </div>
 <!-- Countries not served section ENDS -->
+
+<!-- Packaging section STARTS -->
+<div class="section section--blue">
+    <div class="container">
+        <div class="d-flex justify-content-center flex-wrap">
+            <button class="button button--big button--white-inverse" data-toggle="modal" data-target="#packaging-modal">See packaging options</button>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="packaging-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Packaging options</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="mdi mdi-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="assets/img/packaging.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Packaging section ENDS -->
 
 <?php include('templates/footer.php'); ?>

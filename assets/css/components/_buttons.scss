@@ -1,5 +1,9 @@
 @import '../base/all';
 
+button {
+    cursor: pointer;
+}
+
 .button {
     display: inline-block;
     font-weight: 300;
@@ -45,5 +49,14 @@
 
     &--big {
         padding: 16px 20px;
+    }
+
+    &--white-inverse {
+        background: $blue-light;
+        border-color: #fff;
+        color: #fff;
+        &:hover {
+            background: darken($blue-light, 5%);
+        }
     }
 }

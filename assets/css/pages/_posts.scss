@@ -5,9 +5,9 @@
         background-color: $gray-lighter;
         overflow: hidden;
         @include border-radius(2px);
-        @include transition(background-color .1s ease-in);
+        @include transition(background-color .05s ease-in);
         &:hover {
-            background-color: $gray-light;
+            background-color: darken($gray-lighter, 2%);
         }
         a {
             position: absolute;

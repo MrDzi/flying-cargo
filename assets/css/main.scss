@@ -23,12 +23,12 @@ body {
 }
 
 a {
-    font-weight: bold;
+    // font-weight: bold;
     color: $blue-light;
     @include transition(color .03s ease-in);
     &:hover {
         text-decoration: none;
-        // color: $blue-light;
+        color: darken($blue-light, 5%);
     }
 }
 
@@ -143,22 +143,25 @@ img {
 	&--bkg-image-3 {
 		background: url('../img/bkg-img-3.jpg');
 	}
+	&--blue {
+		background: darken($blue-light, 5%);
+	}
 }
 
 .collapsible-block-wrapper:not(:first-of-type) {
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 .collapsible-block__header {
 	cursor: pointer;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	i {
 		font-size: 22px;
-		color: $yellow;
+		color: $blue-light;
 		margin-right: 12px !important;
 	}
 	h4 {
-		font-size: 16px;
+		font-size: 15px;
 		font-weight: normal;
 		margin-bottom: 0;
 	}
@@ -166,22 +169,29 @@ img {
 
 .collapsible-block {
 	padding-left: 35px;
-	color: $yellow;
+	color: $gray;
 }
 
 .text-card-item {
 	color: #fff;
-	padding: 20px 30px;
+	padding: 12px 30px;
 	background: rgba(255,255,255,0.28);
 	margin: 5px;
 	position: relative;
+	border: 0;
 	overflow: hidden;
 	@include border-radius(2px);
+	&:active, &:focus {
+		outline: none;
+		span, i {
+			opacity: .6;
+		}
+	}
 	span {
 		position: relative;
 		z-index: 2;
 	}
-	i {
+	.small-icon {
 		color: rgba(255,255,255,0.1);
 		position: absolute;
 		z-index: 1;
@@ -196,6 +206,9 @@ img {
 		&.rotate-90 {
 			transform: rotate(-90deg);
 		}
+	}
+	i:not(.small-icon) {
+		font-size: 22px;
 	}
 }
 .text-list {
@@ -295,4 +308,27 @@ img {
 		color: $blue-light;
 		margin-right: 8px;
 	}
+}
+
+.tracking-block {
+	@include flex;
+	justify-content: space-between;
+	align-items: center;
+	@include bp-small {
+		display: block;
+		input {
+			margin-bottom: 10px;
+			max-width: 100%;
+			min-width: 0;
+		}
+	}
+}
+
+.modal-content {
+	@include border-radius(2px);
+}
+
+.modal-header {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
