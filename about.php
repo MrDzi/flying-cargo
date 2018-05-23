@@ -22,11 +22,43 @@
                 <blockquote>“Učiniću svako FedEx iskustvo izvanrednim.“</blockquote>
                 <p>Ne slušamo Vas da bismo Vas slušali, mi Vas čujemo. Mi ne pretpostavljamo šta zelite, mi znamo. To nas izdvaja od konkurencije.</p>
                 <p>Prepoznali ste kvalitet i zato ste ovde, zar ne?</p>
-                <p>Pristupačnost.
-Razumevanje.
-Ekspertiza.
-Brzina.
-Efikasnost.</p>
+
+                <div class="media-block mt-5">
+                    <div class="media media--about">
+                        <img class="align-self-center m-0" src="assets/img/pristupacnost.jpg" alt="pristupacnost">
+                        <div class="media-body align-self-center">
+                            <h2 class="mt-0 text-center">Pristupačnost.</h2>
+                        </div>
+                    </div>
+
+                    <div class="media media--about">
+                        <div class="media-body align-self-center">
+                            <h2 class="mt-0 text-center">Razumevanje.</h2>
+                        </div>
+                        <img class="align-self-center m-0" src="assets/img/razumevanje.jpg" alt="razumevanje">
+                    </div>
+
+                    <div class="media media--about">
+                        <img class="align-self-center m-0" src="assets/img/ekspertiza.jpg" alt="ekspertiza">
+                        <div class="media-body align-self-center">
+                            <h2 class="mt-0 text-center">Ekspertiza.</h2>
+                        </div>
+                    </div>
+
+                    <div class="media media--about">
+                        <div class="media-body align-self-center">
+                            <h2 class="mt-0 text-center">Brzina.</h2>
+                        </div>
+                        <img class="align-self-center m-0" src="assets/img/brzina.jpg" alt="brzina">
+                    </div>
+
+                    <div class="media media--about">
+                        <img class="align-self-center m-0" src="assets/img/efikasnost.jpg" alt="efikasnost">
+                        <div class="media-body align-self-center">
+                            <h2 class="mt-0 text-center">Efikasnost.</h2>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
