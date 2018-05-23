@@ -706,7 +706,7 @@ img {
 
 .page-title {
   padding: 120px 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bkg.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/main.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
   .page-title--has-overlaping-block {
@@ -728,7 +728,7 @@ img {
   .section img {
     margin: 10px 0 30px; }
   .section--hero {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/hero-bkg.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
@@ -760,6 +760,8 @@ img {
     background: url("../img/bkg-img-2.jpg"); }
   .section--bkg-image-3 {
     background: url("../img/bkg-img-3.jpg"); }
+  .section--bkg-image-home {
+    background: url("../img/fedex-home.jpg"); }
   .section--blue {
     background: #1586bd; }
 
