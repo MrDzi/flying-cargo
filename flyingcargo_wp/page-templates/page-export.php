@@ -158,100 +158,47 @@
 <!-- FAQ section ENDS -->
 
 <!-- Countries not served section STARTS -->
-<div class="section section--bkg-image section--bkg-image-2">
+<div class="section section--gray">
     <div class="container">
-        <h3>Countries not served</h3>
-        <div class="d-flex justify-content-center flex-wrap">
-            <div class="text-card-item">
-                <span>Burma (MM)</span>
+        <!-- <h3>Countries not served</h3> -->
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <div class="icon-item">
+                    <i class="mdi mdi-earth"></i>
+                    <strong>Countries not served: </strong>
+                </div>
             </div>
-            <div class="text-card-item">
-                <span>Central African Republic (CF)</span>
-            </div>
-            <div class="text-card-item">
-                <span>Comoros</span>
-            </div>
-            <div class="text-card-item">
-                <span>Cuba</span>
-            </div>
-            <div class="text-card-item">
-                <span>Equatorial Guinea (GQ)</span>
-            </div>
-            <div class="text-card-item">
-                <span>Falklands</span>
-            </div>
-            <div class="text-card-item">
-                <span>Guinea Bissau (GW)</span>
-            </div>
-            <div class="text-card-item">
-                <span>Iran</span>
-            </div>
-            <div class="text-card-item">
-                <span>Johnston Island</span>
-            </div>
-            <div class="text-card-item">
-                <span>Kiribati</span>
-            </div>
-            <div class="text-card-item">
-                <span>North Korea</span>
-            </div>
-            <div class="text-card-item">
-                <span>Mayotte Island</span>
-            </div>
-            <div class="text-card-item">
-                <span>Myanmar (MM)</span>
-            </div>
-            <div class="text-card-item">
-                <span>Nauru</span>
-            </div>
-            <div class="text-card-item">
-                <span>Niue</span>
-            </div>
-            <div class="text-card-item">
-                <span>Saint Pierre et Miquelon</span>
-            </div>
-            <div class="text-card-item">
-                <span>Sao Tome & Principe</span>
-            </div>
-            <div class="text-card-item">
-                <span>Sierra Leone (SL)</span>
-            </div>
-            <div class="text-card-item">
-                <span>Solomon Islands</span>
-            </div>
-            <div class="text-card-item">
-                <span>Somalia</span>
-            </div>
-            <div class="text-card-item">
-                <span>St. Helena (S. Atlantic)</span>
-            </div>
-            <div class="text-card-item">
-                <span>Sudan (SD)</span>
-            </div>
-            <div class="text-card-item">
-                <span>Syria</span>
-            </div>
-            <div class="text-card-item">
-                <span>Tajikistan</span>
-            </div>
-            <div class="text-card-item">
-                <span>Tokelau Islands</span>
-            </div>
-            <div class="text-card-item">
-                <span>Turkmenistan (TM)</span>
-            </div>
-            <div class="text-card-item">
-                <span>Tuvalu</span>
-            </div>
-            <div class="text-card-item">
-                <span>Wake Islands</span>
-            </div>
-            <div class="text-card-item">
-                <span>Yemen (YE)</span>
+            <div class="col-md-9 col-12 d-flex align-items-center pt-7">
+                Burma (MM), Central African Republic (CF), Comoros, Cuba, Equatorial Guinea (GQ), Falklands, Guinea Bissau (GW), Iran, Johnston Island, Kiribati, North Korea, Mayotte Island, Myanmar (MM), Nauru, Niue, Saint Pierre et Miquelon, Sao Tome & Principe, Sierra Leone (SL), Somalia, St. Helena (S. Atlantic), Sudan (SD), Syria, Tajikistan, Tokelau Islands, Turkmenistan (TM), Tuvalu, Wake Islands, Yemen (YE)
             </div>
         </div>
     </div>
 </div>
 <!-- Countries not served section ENDS -->
+
+<!-- Packaging section STARTS -->
+<div class="section section--blue">
+    <div class="container">
+        <div class="d-flex justify-content-center flex-wrap">
+            <button class="button button--big button--white-inverse" data-toggle="modal" data-target="#packaging-modal">See packaging options</button>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="packaging-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Packaging options</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="mdi mdi-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/packaging.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Packaging section ENDS -->
 
 <?php get_footer(); ?>

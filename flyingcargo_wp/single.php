@@ -11,7 +11,7 @@
 	<?php
 		$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 		$title = get_the_title();
-		echo '<div class="page-title page-title--has-overlaping-block" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('. $url.')">
+		echo '<div class="page-title page-title--has-overlaping-block" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('. $url.')">
 				<div class="container">
 					<h1>'.$title.'</h1>
 				</div>
@@ -23,7 +23,7 @@
 <!-- Content section STARTS -->
 <div class="container pb-50">
     <div class="row">
-        <div class="col-8">
+        <div class="col-md-8 col-12">
             <section class="section section--single">
 				<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
                 <div class="post-excerpt">
@@ -36,7 +36,7 @@
 
     		</section>
 		</div>
-		<div class="col-4">
+		<div class="col-md-4 col-12">
 	        <div class="main-sidebar">
 	            <div class="info-block info-block--news">
 	                <h3>Recent News</h3>

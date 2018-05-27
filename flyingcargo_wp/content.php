@@ -1,15 +1,3 @@
-<!-- <li class="mb-3">
-    <article class="news-list__article">
-        <a href="<?php the_permalink(); ?>" class="d-flex">
-
-            <div class="news-list__article-content">
-                <h4><?php the_title(); ?></h4>
-                <span class="date"><?php the_date('d/m/Y'); ?></span>
-            </div>
-        </a>
-    </article>
-</li> -->
-
 <div class="col-md-4 news-block-wrapper__col">
     <article class="news-list__article">
         <a href="<?php the_permalink(); ?>">

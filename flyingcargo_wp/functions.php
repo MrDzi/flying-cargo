@@ -28,6 +28,11 @@
     }
     add_action('wp_enqueue_scripts', 'import_script');
 
+    function new_excerpt_more( $more ) {
+    	return '';
+    }
+    add_filter('excerpt_more', 'new_excerpt_more');
+
     add_theme_support('post-thumbnails', array('post'));
     set_post_thumbnail_size(100, 75);
 

@@ -1,57 +1,35 @@
 <?php get_header(); ?>
 
-<!-- Hero section START -->
-<section class="section section--hero d-flex flex-column justify-content-center align-items-center">
-    <div class="moto">
-        <span><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
-            '[:en]This is moto in English[:]
-            [:rs]Ovo je moto na srpskom[:]'
-        ); ?></span>
-    </div>
-    <div class="tracking-block">
-        <div class="d-flex justify-content-between align-items-center mt-2">
-            <input class="input input--tracking" type="text" id="trackingNumbers" name="trackingNumbers" placeholder="Enter tracking number(s)"></input>
-            <button id="trackingNumbersButton" class="button button--primary button--big">Track package</button>
-        </div>
-        <!-- <div class="tracking-block__info">
-            Track up to 10 numbers at a time, separate with a comma or Enter.
-        </div> -->
-    </div>
-</section>
-<!-- Hero section START -->
+    <?php query_posts('post_type=post&post_status=publish&posts_per_page=10&paged='. get_query_var('paged')); ?>
 
-<!-- Content section START -->
-<section class="section section--content">
-    <div class="container">
-        <div class="news-block-wrapper">
+    <!-- Page title section STARTS -->
+    <div class="page-title">
+        <div class="container">
+            <h1><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                '[:en]All news[:]
+                [:rs]Sve vesti[:]'
+            ); ?></h1>
+        </div>
+    </div>
+    <!-- Page title section ENDS -->
+
+    <!-- Content section STARTS -->
+    <section class="section section--regular">
+        <div class="container">
             <div class="row">
-                <?php
-                $i = 1;
-                if ( have_posts() ) : while ( have_posts() && $i < 4 ) : the_post();
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-                    get_template_part( 'content', get_post_format() );
+                    get_template_part( 'article' );
 
-                $i++; endwhile; endif;
-                ?>
+                endwhile; ?>
+
+                <?php wp_pagenavi(); ?>
+
+                <?php endif; wp_reset_query(); ?>
             </div>
-            <div class="text-center pt-20">
-                <button class="button button--inverse button--big" href="<?php echo esc_url( get_permalink( get_page_by_title( 'All News'))); ?>" class="color-yellow">All news <i class="mdi mdi-chevron-right"></i></button>
-            </div>
+
         </div>
-    </div>
-</section>
-<!-- Content section END -->
-
-<!-- Content section START -->
-<section class="section" style="height: 500px">
-
-</section>
-<!-- Content section END -->
-
-<!-- Map section START -->
-<section class="section section--contact">
-    <div id="map"></div>
-</section>
-<!-- Map section END -->
+    </section>
+    <!-- Content section ENDS -->
 
 <?php get_footer(); ?>

@@ -94,7 +94,7 @@
                     </ul>
                 </div>
                 <div class="col-12 text-left pt-50 small">
-                    <span>All rights reserved. © Flying Cargo YU doo 2000-2018</span>
+                    <span>All rights reserved. © Flying Cargo YU doo 2018</span>
                 </div>
             </div>
         </div>
