@@ -30,14 +30,16 @@
 <!-- Content section ENDS -->
 
 <!-- Import/export wizzard section START -->
-<div class="section section--gray">
+<div class="section section--gray section--wizzard">
     <div class="container">
         <div class="import-wrapper import-wizzard-wrapper">
             <div id="import-wizzard"></div>
         </div>
-        <div class="import-wrapper import-wizzard-finish-wrapper">
-            <div id="import-wizzard-finish"></div>
-        </div>
+    </div>
+</div>
+<div class="section section--blue p-0">
+    <div class="import-wrapper import-wizzard-finish-wrapper">
+        <div id="import-wizzard-finish"></div>
     </div>
 </div>
 <!-- Import/export wizzard section ENDS -->

@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var currentLanguage = document.documentElement.lang;
+
     var importWizzard = $('#import-wizzard'),
         importWizzardFinish = $('#import-wizzard-finish'),
         importWizzardWrapper = $('.import-wizzard-wrapper'),
@@ -21,13 +23,12 @@ $(document).ready(function() {
         'senderType': {
             order: 1,
             name: 'senderType',
-            question: 'Sender type',
-            description: 'Lorem ipsum dolor sit amet',
+            question: currentLanguage === 'rs' ? 'Tip pošiljaoca' : 'Sender type',
             selectedValue: '',
             options: {
                 'privateIndividual': {
                     value: 'privateIndividual',
-                    label: 'Private Individual',
+                    label: currentLanguage === 'rs' ? 'Fizicko lice' : 'Private Individual',
                     next: function() {
                         removeNextSiblings($("#senderType" + this.value));
                         setValueToOption(70);
@@ -37,7 +38,7 @@ $(document).ready(function() {
                 },
                 'company': {
                     value: 'company',
-                    label: 'Company',
+                    label: currentLanguage === 'rs' ? 'Kompanija' : 'Company',
                     next: function() {
                         removeNextSiblings($("#senderType" + this.value));
                         setValueToOption(50);
@@ -50,13 +51,12 @@ $(document).ready(function() {
         'recipientType': {
             order: 2,
             name: 'recipientType',
-            question: 'Recipient type',
-            description: 'Lorem ipsum dolor sit amet',
+            question: currentLanguage === 'rs' ? 'Tip primaoca' : 'Recipient type',
             selectedValue: '',
             options: {
                 'privateIndividual': {
                     value: 'privateIndividual',
-                    label: 'Private Individual',
+                    label: currentLanguage === 'rs' ? 'Fizicko lice' : 'Private Individual',
                     next: function() {
                         removeNextSiblings($("#recipientType" + this.value));
                         renderNextQuestion('value');
@@ -65,7 +65,7 @@ $(document).ready(function() {
                 },
                 'company': {
                     value: 'company',
-                    label: 'Company',
+                    label: currentLanguage === 'rs' ? 'Kompanija' : 'Company',
                     next: function() {
                         removeNextSiblings($("#recipientType" + this.value));
                         renderNextQuestion('value');
@@ -77,8 +77,7 @@ $(document).ready(function() {
         'value': {
             order: 3,
             name: 'value',
-            question: 'Value',
-            description: 'Lorem ipsum dolor sit amet',
+            question: currentLanguage === 'rs' ? 'Vrednost posiljke' : 'Value',
             selectedValue: '',
             options: {
                 '1': {
@@ -103,7 +102,6 @@ $(document).ready(function() {
             order: 4,
             name: 'clearanceType',
             question: 'Clearance type',
-            description: 'Lorem ipsum dolor sit amet',
             selectedValue: '',
             options: {
                 'flyingCargo': {
@@ -111,11 +109,7 @@ $(document).ready(function() {
                     label: 'Flying Cargo',
                     next: function() {
                         removeNextSiblings($("#clearanceType" + this.value));
-                        if (importData['recipientType'].selectedValue === "company") {
-                            appendToWizzardFinishAndAnimate('Text 1');
-                        } else if (importData['recipientType'].selectedValue === "company") {
-                            appendToWizzardFinishAndAnimate('Text 2');
-                        };
+                        appendToWizzardFinishAndAnimate();
                     }
                 },
                 'otherCompany': {
@@ -123,11 +117,7 @@ $(document).ready(function() {
                     label: 'Other Company',
                     next: function() {
                         removeNextSiblings($("#clearanceType" + this.value));
-                        if (importData['recipientType'].selectedValue === "company") {
-                            appendToWizzardFinishAndAnimate('Text 3');
-                        } else if (importData['recipientType'].selectedValue === "company") {
-                            appendToWizzardFinishAndAnimate('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.');
-                        };
+                        appendToWizzardFinishAndAnimate();
                     }
                 },
                 'you': {
@@ -135,11 +125,7 @@ $(document).ready(function() {
                     label: 'You',
                     next: function() {
                         removeNextSiblings($("#clearanceType" + this.value));
-                        if (importData['recipientType'].selectedValue === "company") {
-                            appendToWizzardFinishAndAnimate('Text 5');
-                        } else if (importData['recipientType'].selectedValue === "company") {
-                            appendToWizzardFinishAndAnimate('Text 6');
-                        };
+                        appendToWizzardFinishAndAnimate();
                     }
                 }
             }
@@ -152,8 +138,23 @@ $(document).ready(function() {
     };
 
     function setImportWizzardFinishWrapperHeight(height) {
-        let importWizzardFinishHeight = typeof height !== 'undefined' ? height : getElemOuterHeight(importWizzardFinish);
-        return setElemHeight(importWizzardFinishWrapper, importWizzardFinishHeight);
+        let importWizzardFinishHeight;
+        if (typeof height !== 'undefined') {
+            importWizzardFinishHeight = height;
+            if (height === 0) {
+                importWizzardFinishWrapper.removeClass('is-visible');
+                setTimeout(function() {
+                    importWizzardFinishWrapper.css('overflow', 'hidden');
+                }, 200);
+            }
+        } else {
+            setTimeout(function() {
+                importWizzardFinishWrapper.css('overflow', 'visible');
+                importWizzardFinishWrapper.addClass('is-visible');
+            }, 200);
+            importWizzardFinishHeight = getElemOuterHeight(importWizzardFinish);
+        }
+        setElemHeight(importWizzardFinishWrapper, importWizzardFinishHeight);
     }
 
     function init() {
@@ -192,8 +193,8 @@ $(document).ready(function() {
     }
 
     function setValueToOption(value) {
-        importData['value'].options['1'].label = 'Under ' + value;
-        importData['value'].options['2'].label = 'Over ' + value;
+        importData['value'].options['1'].label = (currentLanguage === 'rs' ? 'Ispod ' : 'Under ') + value;
+        importData['value'].options['2'].label = (currentLanguage === 'rs' ? 'Iznad ' : 'Over ') + value;
     }
 
     function renderFormGroup(formGroupHtml) {
@@ -227,8 +228,32 @@ $(document).ready(function() {
         setImportWizzardFinishWrapperHeight(0);
     }
 
-    function appendToWizzardFinishAndAnimate(content) {
-        importWizzardFinish.append('<div class="p-30">' + content + '</div>');
+    function appendToWizzardFinishAndAnimate() {
+        importWizzardFinish.append('<div class="p-30">' + getResultContent() + '</div>');
         setImportWizzardFinishWrapperHeight();
+    }
+
+    function getResultContent() {
+        if (importData.senderType.selectedValue === 'privateIndividual') {
+            if (importData.value.selectedValue === '1') {
+                return currentLanguage === 'rs' ? '<div>Oslobođeni ste plaćanja carine i PDV-a</div>' : 'You\'re not obligated to pay';
+            } else if (importData.value.selectedValue === '2') {
+                return currentLanguage === 'rs' ? '<div>Preuzmite dokumenta...</div>' : '<div>Download documents...</div>';
+            }
+        } else if (importData.senderType.selectedValue === 'company') {
+            if (importData.recipientType.selectedValue === 'privateIndividual') {
+                if (importData.value.selectedValue === '1') {
+                    return currentLanguage === 'rs' ? '<div>Oslobođeni ste plaćanja carine i PDV-a</div>' : 'You\'re not obligated to pay';
+                } else if (importData.value.selectedValue === '2') {
+                    return currentLanguage === 'rs' ? '<div>Preuzmite dokumenta...</div>' : '<div>Download documents...</div>';
+                }
+            } else if (importData.recipientType.selectedValue === 'company') {
+                if (importData.value.selectedValue === '1') {
+                    return currentLanguage === 'rs' ? '<div>Preuzmite dokumenta...</div>' : '<div>Download documents...</div>';
+                } else if (importData.value.selectedValue === '2') {
+                    return currentLanguage === 'rs' ? '<div>Neki tekst...</div>' : '<div>Something...</div>';
+                }
+            }
+        }
     }
 });

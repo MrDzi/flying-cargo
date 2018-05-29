@@ -466,6 +466,16 @@ select {
 .nav li {
   margin-right: 20px; }
 
+  @media only screen and (max-width: 768px) {
+    .nav li {
+      margin-right: 13px;
+  }
+      .nav li a {
+        font-size: 14px !important;}
+    .language-chooser {
+        padding-left: 20px;
+        }}
+
 .mt-40 {
   margin-top: 40px; }
 
@@ -993,6 +1003,73 @@ background-position: center }
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 25px;
+}
+
+.wp-caption {
+    width: 100% !important;
+  }
+
+  .wp-caption img {
+      height: auto !important;
+      margin-bottom: 10px !important;
+    }
+
+.wp-pagenavi a, .wp-pagenavi span {
+    padding: 10px 15px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+    border-color: #1896D4;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.import-wrapper {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#import-wizzard-finish {
+    background: none;
+    position: relative;
+}
+
+#import-wizzard-finish:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 13px solid #1586bd;
+    clear: both;
+    -webkit-transition: top 0.22s ease-in;
+    -moz-transition: top 0.22s ease-in;
+    -ms-transition: top 0.22s ease-in;
+    -o-transition: top 0.22s ease-in;
+    transition: top 0.22s ease-in;
+}
+
+.import-wizzard-finish-wrapper.is-visible #import-wizzard-finish:after {
+    top: -13px;
+}
+
+.section--wizzard {
+    padding-bottom: 25px;
+}
+
+.form-group__question-header h4 {
+    font-size: 15px;
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 920px;
+    }
 }
 
 /* .moto {

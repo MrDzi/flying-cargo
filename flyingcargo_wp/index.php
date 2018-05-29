@@ -23,7 +23,11 @@
 
                 endwhile; ?>
 
-                <?php wp_pagenavi(); ?>
+                <div class="col-lg-6 col-12 mt-20 mb-20">
+
+                    <?php wp_pagenavi(); ?>
+
+                </div>
 
                 <?php endif; wp_reset_query(); ?>
             </div>

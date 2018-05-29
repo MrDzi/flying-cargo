@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="<?php echo qtranxf_getLanguage() ?>">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,14 +25,14 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <?php
                             $args = array(
-                                'menu_class' => 'nav d-flex justify-content-between',        
+                                'menu_class' => 'nav d-flex justify-content-between',
                                 'menu' => '(your_menu_id)'
                             );
-                            wp_nav_menu( $args ); 
+                            wp_nav_menu( $args );
                             echo qtranxf_generateLanguageSelectCode(array(
                                 'type'   => 'custom',
                                 'format' => '<span class="language-code">%c</span>'
-                            )); 
+                            ));
                         ?>
                     </div>
                 </div>
