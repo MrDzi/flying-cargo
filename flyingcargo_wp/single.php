@@ -31,7 +31,9 @@
 				</div>
 				<?php the_content(null, true); ?>
 				<div class="date"><?php the_date('d/m/Y'); ?></div>
-				<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'All News'))); ?>" class="button button--inverse mt-40">Go to all posts</a>
+				<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'All News'))); ?>" class="button button--inverse mt-40"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+					'[:rs]Sve vesti[:][:en]Go to all posts[:]'
+				)?></a>
 				<?php endwhile; endif; ?>
 
     		</section>
@@ -39,7 +41,9 @@
 		<div class="col-md-4 col-12">
 	        <div class="main-sidebar">
 	            <div class="info-block info-block--news">
-	                <h3>Recent News</h3>
+	                <h3><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+	                    '[:rs]Najnovije vesti[:][:en]Recent News[:]'
+	                )?></h3>
 	                <ul class="news-list list-unstyled">
 
 						<?php

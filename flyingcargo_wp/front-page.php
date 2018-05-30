@@ -6,13 +6,17 @@
         <div class="d-flex flex-column justify-content-center align-items-center mt-80">
             <div class="moto">
                 <span><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
-                    '[:en]This is moto in English[:]
-                    [:rs]Ovo je moto na srpskom[:]'
+                    '[:en]Welcome to FlyingCargo Serbia.[:]
+                    [:rs]Dobro došli na FlyingCargo Srbija.[:]'
                 ); ?></span>
             </div>
             <div class="tracking-block">
-                <input class="input input--tracking" type="text" id="trackingNumbers" name="trackingNumbers" placeholder="Enter tracking number(s)"></input>
-                <button id="trackingNumbersButton" class="button button--primary button--big">Track package</button>
+                <input class="input input--tracking" type="text" id="trackingNumbers" name="trackingNumbers" placeholder="<?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    '[:rs]Unesi šifru/e za praćenje[:][:en]Enter tracking number(s)[:]'
+                )?>"></input>
+                <button id="trackingNumbersButton" class="button button--primary button--big"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    '[:rs]Prati pošiljku[:][:en]Track package[:]'
+                )?></button>
                 <!-- <div class="tracking-block__info">
                     Track up to 10 numbers at a time, separate with a comma or Enter.
                 </div> -->
@@ -36,7 +40,9 @@
                 <?php wp_reset_query(); ?>
             </div>
             <div class="text-center pt-20">
-                <a class="button button--inverse button--big" href="<?php echo esc_url( get_permalink( get_page_by_title( 'All News'))); ?>" class="color-yellow">All news <i class="mdi mdi-chevron-right"></i></a>
+                <a class="button button--inverse button--big" href="<?php echo esc_url( get_permalink( get_page_by_title( 'All News'))); ?>" class="color-yellow"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    '[:rs]Sve vesti[:][:en]All news [:]'
+                )?><i class="mdi mdi-chevron-right"></i></a>
             </div>
         </div>
     </div>
@@ -46,7 +52,9 @@
 <!-- Documents section STARTS -->
 <div class="section section--bkg-image section--bkg-image-2">
     <div class="container">
-        <h3>Important Documents</h3>
+        <h3><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+            '[:rs]Važna dokumenta[:][:en]Important Documents[:]'
+        )?></h3>
         <div class="d-flex justify-content-center flex-wrap">
             <a class="text-card-item d-flex align-items-center">
                 <i class="mdi mdi-download mr-2"></i>
@@ -65,7 +73,9 @@
 <div class="section section--blue">
     <div class="container">
         <div class="d-flex justify-content-center flex-wrap">
-            <button class="button button--big button--white-inverse" data-toggle="modal" data-target="#packaging-modal">See packaging options</button>
+            <button class="button button--big button--white-inverse" data-toggle="modal" data-target="#packaging-modal"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                '[:rs]Opcije pakovanja[:][:en]Packaging options[:]'
+            )?></button>
         </div>
     </div>
 </div>
@@ -73,7 +83,9 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Packaging options</h5>
+                <h5 class="modal-title"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    '[:rs]Opcije pakovanja[:][:en]Packaging options[:]'
+                )?></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="mdi mdi-close"></i>
                 </button>
