@@ -264,7 +264,7 @@
                     '[:rs]Dokument Instrukcije za transport pošiljke popunjava pošiljalac i predaje uz paket i ostalu dokumentaciju, ukoliko je neophodna.[:][:en]Other document Instrukcije za transport posiljke has to be completed by shipper and handover with shipment and other documentation if needed, or send via e-mail.[:]'
                 )?></p>
                 <p><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
-                    '[:rs]Otkup paketa, odnosno plaćanje prilikom pouzeća nije moguće.[:][:en]Translation needed !!![:]'
+                    '[:rs]Otkup paketa, odnosno plaćanje prilikom pouzeća nije moguće.[:][:en]Cash on delivery is not an option.[:]'
                 )?></p>
 
                 <p><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
@@ -327,8 +327,45 @@
                     )?></strong>
                 </div>
             </div>
-            <div class="col-md-9 col-12 d-flex align-items-center pt-7">
-                Burma (MM), Central African Republic (CF), Comoros, Cuba, Equatorial Guinea (GQ), Falklands, Guinea Bissau (GW), Iran, Johnston Island, Kiribati, North Korea, Mayotte Island, Myanmar (MM), Nauru, Niue, Saint Pierre et Miquelon, Sao Tome & Principe, Sierra Leone (SL), Somalia, St. Helena (S. Atlantic), Sudan (SD), Syria, Tajikistan, Tokelau Islands, Turkmenistan (TM), Tuvalu, Wake Islands, Yemen (YE)
+            <div class="countries-not-served col-md-9 col-12 d-flex align-items-center pt-7">
+                <div class="row">
+                    <div class="col-md-3 col-12">
+                        <p>Burma (MM)</p>
+                        <p>Central African Republic (CF)</p>
+                        <p>Comoros</p>
+                        <p>Cuba</p>
+                        <p>Equatorial Guinea (GQ)</p>
+                        <p>Falklands</p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <p>Guinea Bissau (GW)</p>
+                        <p>Iran</p>
+                        <p>Johnston Island</p>
+                        <p>Kiribati</p>
+                        <p>North Korea</p>
+                        <p>Mayotte Island</p>
+                        <p>Myanmar (MM)</p>
+                        <p>Nauru</p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <p>Niue</p>
+                        <p>Saint Pierre et Miquelon</p>
+                        <p>Sao Tome & Principe</p>
+                        <p>Sierra Leone (SL)</p>
+                        <p>Somalia</p>
+                        <p>St. Helena (S. Atlantic)</p>
+                        <p>Sudan (SD)</p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <p>Syria</p>
+                        <p>Tajikistan</p>
+                        <p>Tokelau Islands</p>
+                        <p>Turkmenistan (TM)</p>
+                        <p>Tuvalu</p>
+                        <p>Wake Islands</p>
+                        <p>Yemen (YE)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

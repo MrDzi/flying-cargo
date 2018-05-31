@@ -12,7 +12,7 @@
             </div>
             <div class="tracking-block">
                 <input class="input input--tracking" type="text" id="trackingNumbers" name="trackingNumbers" placeholder="<?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
-                    '[:rs]Unesi šifru/e za praćenje[:][:en]Enter tracking number(s)[:]'
+                    '[:rs]Unesi broj za praćenje[:][:en]Enter tracking number(s)[:]'
                 )?>"></input>
                 <button id="trackingNumbersButton" class="button button--primary button--big"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]Prati pošiljku[:][:en]Track package[:]'

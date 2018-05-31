@@ -229,7 +229,7 @@ $(document).ready(function() {
     }
 
     function appendToWizzardFinishAndAnimate() {
-        importWizzardFinish.append('<div class="p-30">' + getResultContent() + '</div>');
+        importWizzardFinish.append('<div class="p-30 pt-40 pb-40">' + getResultContent() + '</div>');
         setImportWizzardFinishWrapperHeight();
     }
 

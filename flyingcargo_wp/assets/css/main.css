@@ -78,7 +78,7 @@
   align-items: flex-start; }
 
 .bkg-gray {
-  background: #F3F5F8; }
+  background: #eff0f2; }
 
 .list-unstyled {
   list-style: none; }
@@ -550,7 +550,7 @@ select {
   align-items: flex-start; }
 
 .bkg-gray {
-  background: #F3F5F8; }
+  background: #eff0f2; }
 
 .list-unstyled {
   list-style: none; }
@@ -575,7 +575,7 @@ select {
 /***  Posts page  ***/
 .posts-list__post {
   height: 100%;
-  background-color: #F3F5F8;
+  background-color: #eff0f2;
   overflow: hidden;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -622,7 +622,7 @@ select {
   margin-bottom: 5px; }
 
 .post-excerpt {
-  border-bottom: 1px solid #F3F5F8;
+  border-bottom: 1px solid #eff0f2;
   margin-bottom: 30px; }
   .post-excerpt p {
     font-size: 22px;
@@ -686,7 +686,7 @@ body {
   color: #262626;
   font-size: 15px;
   margin-bottom: 414px;
-  background-color: #F3F5F8; }
+  background-color: #eff0f2; }
   @media only screen and (max-width: 768px) {
     body {
       margin-bottom: 986px; } }
@@ -763,7 +763,7 @@ background-position: center }
   .section--contact {
     padding: 0; }
   .section--gray {
-    background: #F3F5F8; }
+    background: #eff0f2; }
   .section--single {
     margin-top: -50px;
     padding: 40px; }
@@ -773,7 +773,7 @@ background-position: center }
     .section--faq h3:after {
       background-color: #9E9E9E; }
   .section--content {
-    background: #F3F5F8;
+    background: #eff0f2;
     padding: 0 0 20px; }
   .section--bkg-image {
     background: url("../img/bkg-img.jpg");
@@ -1066,10 +1066,26 @@ background-position: center }
     font-size: 15px;
 }
 
+.countries-not-served p {
+    margin-bottom: 5px;
+}
+
 @media (min-width: 992px) {
     .modal-lg {
         max-width: 920px;
     }
+}
+
+.form-group:not(:first-of-type) {
+    border-top: 1px solid #dfdfdf;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
 }
 
 /* .moto {
