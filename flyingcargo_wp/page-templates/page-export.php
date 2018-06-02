@@ -34,7 +34,7 @@
 <div class="section section--gray">
     <div class="container">
         <div class="row">
-            <div class="col-6 pl-pr-40">
+            <div class="col-md-6 col-12 pl-pr-40 mb-30-sm">
                 <h4><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]FedEx International Priority servis[:][:en]FedEx International Priority service[:]'
                 )?></h4>
@@ -67,7 +67,7 @@
                     )?></li>
                 </ul>
             </div>
-            <div class="col-6 pl-pr-40">
+            <div class="col-md-6 col-12 pl-pr-40">
                 <h4><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]FedEx International Priority Freight servis[:][:en]FedEx International Priority Freight service[:]'
                 )?></h4>
@@ -394,7 +394,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/packaging.jpg" alt="">
+                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/<?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    '[:rs]packaging[:][:en]packaging_eng[:]'
+                )?>.jpg" alt="">
             </div>
         </div>
     </div>

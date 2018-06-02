@@ -162,25 +162,25 @@ button:focus {
     outline: none;
     border-color: #262626; }
   .input.placeholder {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    color: #D5D5D5; }
+    color: #bababa; }
   .input:-moz-placeholder {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    color: #D5D5D5; }
+    color: #bababa; }
   .input::-moz-placeholder {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    color: #D5D5D5; }
+    color: #bababa; }
   .input:-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    color: #D5D5D5; }
+    color: #bababa; }
   .input::-webkit-input-placeholder {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    color: #D5D5D5; }
+    color: #bababa; }
 
 .input--tracking {
     font-size: 16px;
@@ -1070,11 +1070,6 @@ background-position: center }
     margin-bottom: 5px;
 }
 
-@media (min-width: 992px) {
-    .modal-lg {
-        max-width: 920px;
-    }
-}
 
 .form-group:not(:first-of-type) {
     border-top: 1px solid #dfdfdf;
@@ -1086,6 +1081,132 @@ background-position: center }
 
 .pb-40 {
     padding-bottom: 40px;
+}
+
+.button--big {
+    padding: 14px 20px;
+}
+
+.text-card-item {
+    padding: 10px 30px;
+}
+
+.moto-wrapper {
+    margin-top: 80px;
+}
+
+#trackingNumbersButton {
+    padding: 16px 20px;
+}
+
+.text-card-item .small-icon {
+    top: -4px;
+    font-size: 60px;
+}
+
+.news-list__image {
+    background-size: cover;
+    background-position: center;
+}
+
+.date {
+    font-size: 12px;
+}
+
+.input.placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #bababa; }
+.input:-moz-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #bababa; }
+.input::-moz-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #bababa; }
+.input:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #bababa; }
+.input::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #bababa; }
+
+.news-list__article {
+    width: 85%;
+}
+
+.news-list__article h4 {
+    margin-bottom: 10px;
+}
+
+.news-list__image {
+    margin-bottom: 22px;
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 920px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    body {
+        margin-bottom: 425px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        margin-bottom: 457px;
+    }
+    .news-list__image {
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-bottom: 981px;
+    }
+    .tracking-block {
+        width: 100%;
+    }
+    .news-list__image {
+        margin-bottom: 15px;
+    }
+    .news-block-wrapper h4 {
+        margin-bottom: 10px;
+    }
+    .news-list__article {
+        margin-bottom: 30px;
+    }
+    .main-footer {
+        padding: 60px 15px 30px;
+    }
+    .contact-list {
+        margin-bottom: 40px;
+    }
+    .main-footer h4 {
+        margin-bottom: 15px;
+    }
+    .moto {
+        margin-bottom: 50px;
+    }
+    .moto-wrapper {
+        margin-top: 30px;
+    }
+    .news-list__image {
+        height: 220px;
+    }
+    .countries-not-served .col-12 {
+        padding: 0 45px;
+    }
+    .mb-30-sm {
+        margin-bottom: 30px;
+    }
 }
 
 /* .moto {

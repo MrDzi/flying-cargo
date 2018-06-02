@@ -3,7 +3,7 @@
 <!-- Hero section START -->
 <section class="section section--hero">
     <div class="container">
-        <div class="d-flex flex-column justify-content-center align-items-center mt-80">
+        <div class="moto-wrapper d-flex flex-column justify-content-center align-items-center">
             <div class="moto">
                 <span><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:en]Welcome to FlyingCargo Serbia.[:]
@@ -12,7 +12,7 @@
             </div>
             <div class="tracking-block">
                 <input class="input input--tracking" type="text" id="trackingNumbers" name="trackingNumbers" placeholder="<?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
-                    '[:rs]Unesi broj za praćenje[:][:en]Enter tracking number(s)[:]'
+                    '[:rs]Unesi broj(eve) za praćenje[:][:en]Enter tracking number(s)[:]'
                 )?>"></input>
                 <button id="trackingNumbersButton" class="button button--primary button--big"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]Prati pošiljku[:][:en]Track package[:]'
@@ -91,7 +91,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/packaging.jpg" alt="">
+                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/<?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    '[:rs]packaging[:][:en]packaging_eng[:]'
+                )?>.jpg" alt="">
             </div>
         </div>
     </div>
