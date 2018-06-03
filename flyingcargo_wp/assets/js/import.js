@@ -193,8 +193,8 @@ $(document).ready(function() {
     }
 
     function setValueToOption(value) {
-        importData['value'].options['1'].label = (currentLanguage === 'rs' ? 'Ispod ' : 'Under ') + value;
-        importData['value'].options['2'].label = (currentLanguage === 'rs' ? 'Iznad ' : 'Over ') + value;
+        importData['value'].options['1'].label = (currentLanguage === 'rs' ? 'Ispod ' : 'Under ') + value + '&euro;';
+        importData['value'].options['2'].label = (currentLanguage === 'rs' ? 'Iznad ' : 'Over ') + value + '&euro;';
     }
 
     function renderFormGroup(formGroupHtml) {

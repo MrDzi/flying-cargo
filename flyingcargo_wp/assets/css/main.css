@@ -755,7 +755,7 @@ background-position: center }
   .section img {
     margin: 10px 0 30px; }
   .section--hero {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/main.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/main2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
@@ -1092,11 +1092,41 @@ background-position: center }
 }
 
 .moto-wrapper {
-    margin-top: 80px;
+    margin-top: 40px;
+}
+
+.moto {
+    margin-bottom: 70px;
+}
+
+.section--hero {
+    background-position: center;
 }
 
 #trackingNumbersButton {
     padding: 16px 20px;
+}
+
+.section--bkg-image-2 {
+    background-image: url("../img/documents.jpg");
+}
+
+.section {
+    background-size: cover;
+    background-position: center;
+}
+
+blockquote {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.media-body h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .text-card-item .small-icon {
@@ -1146,6 +1176,31 @@ background-position: center }
     margin-bottom: 22px;
 }
 
+.media {
+    margin-bottom: 5px;
+}
+
+.media--about img {
+    width: 53%;
+}
+
+a.text-card-item {
+    -webkit-transition: opacity 0.1s ease-in;
+    -moz-transition: opacity 0.1s ease-in;
+    -ms-transition: opacity 0.1s ease-in;
+    -o-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+}
+
+
+a.text-card-item:hover, a.text-card-item:focus {
+    opacity: .8
+}
+
+body {
+    margin-bottom: 372px;
+}
+
 @media (min-width: 992px) {
     .modal-lg {
         max-width: 920px;
@@ -1154,13 +1209,13 @@ background-position: center }
 
 @media (min-width: 992px) and (max-width: 1200px) {
     body {
-        margin-bottom: 425px;
+        margin-bottom: 383px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     body {
-        margin-bottom: 457px;
+        margin-bottom: 415px;
     }
     .news-list__image {
         height: 130px;
@@ -1169,7 +1224,7 @@ background-position: center }
 
 @media (max-width: 768px) {
     body {
-        margin-bottom: 981px;
+        margin-bottom: 1052px;
     }
     .tracking-block {
         width: 100%;
