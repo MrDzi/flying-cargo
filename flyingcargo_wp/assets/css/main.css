@@ -685,7 +685,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #262626;
   font-size: 15px;
-  margin-bottom: 414px;
+  margin-bottom: 410px;
   background-color: #eff0f2; }
   @media only screen and (max-width: 768px) {
     body {
@@ -986,10 +986,11 @@ background-position: center }
     content: '';
     display: block;
     margin: 0 auto;
-    height: 3px;
-    width: 15px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
     position: relative;
-    bottom: -5px;
+    bottom: -3px;
     background-color: #a1a1a1;
 }
 
@@ -1117,11 +1118,13 @@ background-position: center }
 }
 
 blockquote {
+    color: #aeaeae;
+    font-style: italic;
     text-align: center;
     font-size: 30px;
     line-height: 1.2;
     font-weight: 300;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .media-body h2 {
@@ -1177,7 +1180,7 @@ blockquote {
 }
 
 .media {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .media--about img {
@@ -1198,7 +1201,47 @@ a.text-card-item:hover, a.text-card-item:focus {
 }
 
 body {
-    margin-bottom: 372px;
+    margin-bottom: 368px;
+}
+
+.logo img {
+    width: 54px;
+}
+
+.page-title {
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.page-title--import {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/import.jpg");
+}
+
+.page-title--export {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/export.jpg");
+}
+
+.page-title--about {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/about-us.jpg");
+}
+
+.input--tracking {
+    opacity: 1;
+}
+
+.section--documents .text-card-item {
+    padding: 6px 20px;
+    background: rgba(255, 255, 255, 0.34);
+}
+
+.section--documents {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/documents.jpg");
 }
 
 @media (min-width: 992px) {
@@ -1209,13 +1252,13 @@ body {
 
 @media (min-width: 992px) and (max-width: 1200px) {
     body {
-        margin-bottom: 383px;
+        margin-bottom: 379px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     body {
-        margin-bottom: 415px;
+        margin-bottom: 411px;
     }
     .news-list__image {
         height: 130px;
@@ -1224,7 +1267,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        margin-bottom: 1052px;
+        margin-bottom: 1048px;
     }
     .tracking-block {
         width: 100%;

@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 <!-- Page title section STARTS -->
-<div class="page-title page-title--has-overlaping-block">
+<div class="page-title page-title--about">
     <div class="container">
         <h1><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
             '[:rs]O nama[:][:en]About Us[:]'

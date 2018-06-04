@@ -8,7 +8,7 @@
                 <ul class="contact-list list-unstyled">
                     <li class="d-flex align-items-center">
                         <i class="mdi mdi-map-marker small-icon mr-2"></i>
-                        <span>Autoput 22, 11000 Beograd</span>
+                        <span>Autoput 22, </br>11000 Beograd</span>
                     </li>
                     <li class="d-flex align-items-center">
                         <i class="mdi mdi-phone small-icon mr-2"></i>
@@ -20,8 +20,8 @@
                     </li>
                     <li class="d-flex align-items-top">
                         <i class="mdi mdi-clock small-icon mr-2"></i>
-                        <span class="mt-1">Mon - Fri: 08:00 to 19:00</br>
-                            Sat: 08:00 to 14:00</br>
+                        <span class="mt-1">Mon - Fri: 08:00 - 19:00</br>
+                            Sat: 08:00 - 14:00</br>
                         </span>
                     </li>
                 </ul>
@@ -40,14 +40,16 @@
                         <span>+381 11 22 86 135</span>
                     </li>
                     <li class="d-flex align-items-center">
+                        <i class="mdi mdi-phone small-icon mr-2"></i>
+                        <span>+381 11 20 97 102</span>
+                    </li>
+                    <li class="d-flex align-items-center">
                         <i class="mdi mdi-email small-icon mr-2"></i>
                         <span>customs@flying-cargo.rs</span>
                     </li>
                     <li class="d-flex align-items-top">
                         <i class="mdi mdi-clock small-icon mr-2"></i>
-                        <span class="mt-1">Mon - Fri: 08:00 to 19:00</br>
-                            Sat: 08:00 to 14:00</br>
-                        </span>
+                        <span class="mt-1">Mon - Fri: 08:00 - 16:00</span>
                     </li>
                 </ul>
             </div>
@@ -65,18 +67,12 @@
                         <span>+381 21 571 515</span>
                     </li>
                     <li class="d-flex align-items-center">
-                        <i class="mdi mdi-fax small-icon mr-2"></i>
-                        <span>+381 11 3109 444</span>
-                    </li>
-                    <li class="d-flex align-items-center">
                         <i class="mdi mdi-email small-icon mr-2"></i>
                         <span>info@flying-cargo.rs</span>
                     </li>
                     <li class="d-flex align-items-top">
                         <i class="mdi mdi-clock small-icon mr-2"></i>
-                        <span class="mt-1">Mon - Fri: 08:00 to 19:00</br>
-                            Sat: 08:00 to 14:00</br>
-                        </span>
+                        <span class="mt-1">Mon - Fri: 08:00 - 17:00</span>
                     </li>
                 </ul>
             </div>
@@ -99,9 +95,7 @@
                     </li>
                     <li class="d-flex align-items-top">
                         <i class="mdi mdi-clock small-icon mr-2"></i>
-                        <span class="mt-1">Mon - Fri: 08:00 to 19:00</br>
-                            Sat: 08:00 to 14:00</br>
-                        </span>
+                        <span class="mt-1">Mon - Fri: 08:00 - 17:00</span>
                     </li>
                 </ul>
             </div>

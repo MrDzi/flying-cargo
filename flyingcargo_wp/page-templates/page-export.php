@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 <!-- Page title section STARTS -->
-<div class="page-title">
+<div class="page-title page-title--export">
     <div class="container">
         <h1><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
             '[:rs]Izvoz[:][:en]Export[:]'

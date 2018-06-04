@@ -50,19 +50,55 @@
 <!-- Content section END -->
 
 <!-- Documents section STARTS -->
-<div class="section section--bkg-image section--bkg-image-2">
+<div class="section section--bkg-image section--documents">
     <div class="container">
         <h3><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
             '[:rs]Važna dokumenta[:][:en]Important Documents[:]'
         )?></h3>
-        <div class="d-flex justify-content-center flex-wrap">
-            <a class="text-card-item d-flex align-items-center">
+        <div class="d-flex flex-wrap">
+            <a href="<?php bloginfo('template_url'); ?>/assets/documents/isprava-o-zastupanju.doc" class="text-card-item d-flex align-items-center">
                 <i class="mdi mdi-download mr-2"></i>
-                <span>import.doc</span>
+                <span>Isprava o zastupanju</span>
             </a>
-            <a class="text-card-item d-flex align-items-center">
+            <a href="<?php bloginfo('template_url'); ?>/assets/documents/nalog-za-carinjenje.doc" class="text-card-item d-flex align-items-center">
                 <i class="mdi mdi-download mr-2"></i>
-                <span>export.doc</span>
+                <span>Nalog za carinjenje</span>
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/documents/import/izjava-o-besplatnoj-posiljci.doc" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Izjava o besplatnoj pošiljci</span>
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/documents/import/izjava-o-nameni.doc" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Izjava o nameni</span>
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/documents/import/izjava-o-realnoj-vrednosti-za-fizicka-lica.docx" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Izjava o realnoj vrednosti za fizička lica</span>
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/documents/import/izjava-za-fizicka-lica.docx" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Izjava za fizička lica</span>
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/documents/import/ovlascenje-fizicka-lica.doc" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Ovlašćenje za fizička lica</span>
+            </a>
+            <a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/commercial-invoice_faktura.pdf" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Commercial invoice - faktura</span>
+            </a>
+            <a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/instrukcije-za-preuzimanje-posiljke-u-inostranstvu.pdf" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Instrukcije za preuzimanje pošiljke u inostranstvu</span>
+            </a>
+            <a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/instrukcije-za-transport-posiljke.pdf" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Instrukcije za transport pošiljke</span>
+            </a>
+            <a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/letter-of-authorization_pismo-autorizacije.pdf" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Letter of authorization - pismo autorizacije</span>
             </a>
         </div>
     </div>

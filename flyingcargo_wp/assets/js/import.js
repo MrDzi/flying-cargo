@@ -28,7 +28,7 @@ $(document).ready(function() {
             options: {
                 'privateIndividual': {
                     value: 'privateIndividual',
-                    label: currentLanguage === 'rs' ? 'Fizicko lice' : 'Private Individual',
+                    label: currentLanguage === 'rs' ? 'Fizičko lice' : 'Private Individual',
                     next: function() {
                         removeNextSiblings($("#senderType" + this.value));
                         setValueToOption(70);
@@ -56,7 +56,7 @@ $(document).ready(function() {
             options: {
                 'privateIndividual': {
                     value: 'privateIndividual',
-                    label: currentLanguage === 'rs' ? 'Fizicko lice' : 'Private Individual',
+                    label: currentLanguage === 'rs' ? 'Fizičko lice' : 'Private Individual',
                     next: function() {
                         removeNextSiblings($("#recipientType" + this.value));
                         renderNextQuestion('value');
@@ -77,7 +77,7 @@ $(document).ready(function() {
         'value': {
             order: 3,
             name: 'value',
-            question: currentLanguage === 'rs' ? 'Vrednost posiljke' : 'Value',
+            question: currentLanguage === 'rs' ? 'Vrednost pošiljke' : 'Value',
             selectedValue: '',
             options: {
                 '1': {
@@ -236,20 +236,20 @@ $(document).ready(function() {
     function getResultContent() {
         if (importData.senderType.selectedValue === 'privateIndividual') {
             if (importData.value.selectedValue === '1') {
-                return currentLanguage === 'rs' ? '<div>Oslobođeni ste plaćanja carine i PDV-a</div>' : 'You\'re not obligated to pay';
+                return currentLanguage === 'rs' ? '<div><p>Fizička lica koja očekuju pošiljku od fizičkih lica za lične potrebe u realnoj i dokazivoj vrednosti do 70 evra su oslobođena plaćanja carine i PDV-a.</p><p>Fizička lica po zakonu Republike Srbije ne mogu uvoziti uzorke, medikimante i medicinske aparate. Za uvoz medikamenata i medicinkih uređaja potrebna je dozvola Agencije za lekove i medicinska sredstva.</p><p>Fizička lica su oslobođena carine i PDV-a još u slučaju uvoza ličnih stvari i autorskih dela, ali su u obavezi da dokažu da je reč o autorskom delu ili ličnim stvarima.</p></div>' : 'You\'re not obligated to pay';
             } else if (importData.value.selectedValue === '2') {
                 return currentLanguage === 'rs' ? '<div>Preuzmite dokumenta...</div>' : '<div>Download documents...</div>';
             }
         } else if (importData.senderType.selectedValue === 'company') {
             if (importData.recipientType.selectedValue === 'privateIndividual') {
                 if (importData.value.selectedValue === '1') {
-                    return currentLanguage === 'rs' ? '<div>Oslobođeni ste plaćanja carine i PDV-a</div>' : 'You\'re not obligated to pay';
+                    return currentLanguage === 'rs' ? '<div>Fizička lica koja pošiljke dobijaju od ino-kompanija, a za ličnu upotrebu, mogu biti oslobođena plaćanja carine ( PDV je obavezan) ukoliko je pošiljka u realnoj vrednosti do 50 evra, u čiju vrednost se ne uračunavaju troškovi transporta.</div>' : 'You\'re not obligated to pay';
                 } else if (importData.value.selectedValue === '2') {
                     return currentLanguage === 'rs' ? '<div>Preuzmite dokumenta...</div>' : '<div>Download documents...</div>';
                 }
             } else if (importData.recipientType.selectedValue === 'company') {
                 if (importData.value.selectedValue === '1') {
-                    return currentLanguage === 'rs' ? '<div>Preuzmite dokumenta...</div>' : '<div>Download documents...</div>';
+                    return currentLanguage === 'rs' ? '<div><p>Pravna lica su oslobođena plaćanja carine ali ne i PDV-a za pošiljke koje imaju realnu vrednost do 50 evra i služe isključivo za potrebe kompanije, a ne za dalju prodaju.</p><p>Pošiljke vrednosti do 50 evra moraju da se carine u redovnoj proceduri, ako roba zahteva bilo kakvo rešenje nadležnog ministarstva (ratel, agencija za lekove, sanitarni, tržišni, fito sertifikat za bezbednost hrane i slično).</p><p>Pravna lica  su oslobođena plaćanja carine ali ne i PDV-a za pošiljke koje služe kao uzorci i reklamni materijal, koji se besplatno primaju iz inostranstva a doprinose razvoju novih tehnologija, izuzev na uvoz automobila i igara na sreću.</p></div>' : '<div>Download documents...</div>';
                 } else if (importData.value.selectedValue === '2') {
                     return currentLanguage === 'rs' ? '<div>Neki tekst...</div>' : '<div>Something...</div>';
                 }
