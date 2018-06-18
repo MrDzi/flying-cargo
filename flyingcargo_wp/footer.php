@@ -27,7 +27,9 @@
                 </ul>
             </div>
             <div class="col-md-3 col-12">
-                <h4>Carinsko odeljenje</h4>
+                <h4><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    '[:rs]Carinsko odeljenje[:][:en]Customs department[:]'
+                )?></h4>
                 <ul class="contact-list list-unstyled">
                     <li class="d-flex align-items-top">
                         <i class="mdi mdi-map-marker small-icon mr-2"></i>
@@ -49,7 +51,7 @@
                     </li>
                     <li class="d-flex align-items-top">
                         <i class="mdi mdi-clock small-icon mr-2"></i>
-                        <span class="mt-1">Mon - Fri: 08:00 - 16:00</span>
+                        <span class="mt-1">Mon - Fri: 08:30 - 16:30</span>
                     </li>
                 </ul>
             </div>
@@ -60,7 +62,7 @@
                 <ul class="contact-list list-unstyled">
                     <li class="d-flex align-items-center">
                         <i class="mdi mdi-map-marker small-icon mr-2"></i>
-                        <span>Šafarikova 35, 21000 Novi Sad</span>
+                        <span>Šafarikova 35, </br>21000 Novi Sad</span>
                     </li>
                     <li class="d-flex align-items-center">
                         <i class="mdi mdi-phone small-icon mr-2"></i>
@@ -83,11 +85,11 @@
                 <ul class="contact-list list-unstyled">
                     <li class="d-flex align-items-center">
                         <i class="mdi mdi-map-marker small-icon mr-2"></i>
-                        <span>Jug Bogdanova 9, lokal L1, 18000 Niš</span>
+                        <span>Jug Bogdanova 9, lokal L1, </br>18000 Niš</span>
                     </li>
                     <li class="d-flex align-items-center">
                         <i class="mdi mdi-phone small-icon mr-2"></i>
-                        <span>+381 XXX XXX</span>
+                        <span>+381 18 XXX XXX</span>
                     </li>
                     <li class="d-flex align-items-center">
                         <i class="mdi mdi-email small-icon mr-2"></i>
@@ -95,7 +97,7 @@
                     </li>
                     <li class="d-flex align-items-top">
                         <i class="mdi mdi-clock small-icon mr-2"></i>
-                        <span class="mt-1">Mon - Fri: 08:00 - 17:00</span>
+                        <span class="mt-1">Mon - Fri: 08:00 - 16:00</span>
                     </li>
                 </ul>
             </div>

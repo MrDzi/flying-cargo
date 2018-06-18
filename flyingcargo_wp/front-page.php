@@ -12,7 +12,7 @@
             </div>
             <div class="tracking-block">
                 <input class="input input--tracking" type="text" id="trackingNumbers" name="trackingNumbers" placeholder="<?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
-                    '[:rs]Unesi broj(eve) za praćenje[:][:en]Enter tracking number(s)[:]'
+                    '[:rs]Unesi broj(eve) za praćenje odvojene zapetom[:][:en]Enter tracking number(s) separated by comma[:]'
                 )?>"></input>
                 <button id="trackingNumbersButton" class="button button--primary button--big"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]Prati pošiljku[:][:en]Track package[:]'
@@ -100,6 +100,10 @@
                 <i class="mdi mdi-download mr-2"></i>
                 <span>Letter of authorization - pismo autorizacije</span>
             </a>
+            <a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/izjava-za-bateriju.doc" class="text-card-item d-flex align-items-center">
+                <i class="mdi mdi-download mr-2"></i>
+                <span>Izjava za bateriju</span>
+            </a>
         </div>
     </div>
 </div>
@@ -129,7 +133,7 @@
             <div class="modal-body">
                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/<?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]packaging[:][:en]packaging_eng[:]'
-                )?>.jpg" alt="">
+                )?>.png" alt="">
             </div>
         </div>
     </div>

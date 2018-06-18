@@ -3,7 +3,7 @@
     <?php query_posts('post_type=post&post_status=publish&posts_per_page=10&paged='. get_query_var('paged')); ?>
 
     <!-- Page title section STARTS -->
-    <div class="page-title">
+    <div class="page-title page-title--news">
         <div class="container">
             <h1><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                 '[:en]All news[:]

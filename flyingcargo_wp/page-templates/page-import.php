@@ -6,11 +6,11 @@
 
 <!-- Page title section STARTS -->
 <div class="page-title page-title--import">
-    <div class="container">
+    <!-- <div class="container">
         <h1><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
             '[:rs]Uvoz[:][:en]Import[:]'
         )?></h1>
-    </div>
+    </div> -->
 </div>
 <!-- Page title section ENDS -->
 
@@ -43,6 +43,9 @@
                 '[:rs]Isporuka „od vrata do vrata“[:][:en]Door-to-Door delivery[:]'
             )?></li>
         </ul>
+        <p class="top-20"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+            '[:rs]Istražite uvozni servis - odaberite odgovarajuće opcije:[:][:en]Explore our import service by choosing the right options:[:]'
+        )?></p>
     </div>
 </section>
 <!-- Content section ENDS -->
@@ -136,7 +139,7 @@
 <!-- FAQ section ENDS -->
 
 <!-- Forbidden Goods section STARTS -->
-<div class="section section--bkg-image section--bkg-image-2">
+<div class="section section--restricted">
     <div class="container">
         <h3><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
             '[:rs]Zabranjena roba za uvoz u Srbiju[:][:en]Restricted Goods for Serbia[:]'

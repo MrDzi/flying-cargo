@@ -6,11 +6,11 @@
 
 <!-- Page title section STARTS -->
 <div class="page-title page-title--export">
-    <div class="container">
+    <!-- <div class="container">
         <h1><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
             '[:rs]Izvoz[:][:en]Export[:]'
         )?></h1>
-    </div>
+    </div> -->
 </div>
 <!-- Page title section ENDS -->
 
@@ -109,18 +109,18 @@
                     '[:rs]. Sva umetnička dela podležu izvoznom carinjenju. FedEx u Srbiji  nudi Vam potpuno besplatnu uslugu izvoznog carinjenja. Pored dozvole, dokumentacija neophodna za izvoz je u nastavku:[:][:en]. All artworks have to  be customs cleared. FedEx in Serbia provides you completely free of charge export clearance procedure. Beside aforementioned license, other paperwork requirements are:[:]'
                 )?></p>
                 <ul>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    <li><a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/commercial-invoice_faktura.pdf"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Profaktura/Faktura[:][:en]Commercial Invoice[:]'
-                    )?></li>
+                    )?></a></li>
                     <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Kopija lične karte ili pasoša[:][:en]Personal ID/ Passport copy[:]'
                     )?></li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    <li><a href="<?php bloginfo('template_url'); ?>/assets/documents/nalog-za-carinjenje.doc"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Nalog za carinjenje[:][:en]Customs Clearance order[:]'
-                    )?></li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    )?></a></li>
+                    <li><a href="<?php bloginfo('template_url'); ?>/assets/documents/isprava-o-zastupanju.doc"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Isprava o zastupanju[:][:en]Power of attorney[:]'
-                    )?></li>
+                    )?></a></li>
                 </ul>
                 <p><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]Za dodatne informacije i savete molimo Vas da kontaktirate korisnički servis putem e-mail adrese: [:][:en]For any additional information please feel free to contact our Customer Service via e-mail [:]'
@@ -148,9 +148,9 @@
                     )?><a href="www.alims.gov.rs"> www.alims.gov.rs </a></br><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Pored dozvole, carina može zahtevati i dodatnu propratnu medicinsku dokumentaciju.[:][:en] is required. Beside aforementioned license Customs can request additional medical documentation.[:]'
                     )?></li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    <li><a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/commercial-invoice_faktura.pdf"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Profaktura/faktura[:][:en]Commercial Invoice[:]'
-                    )?></li>
+                    )?></a></li>
                 </ul>
                 <p><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]FedEx servisira preko 220 zemalja i teritorija, a svaka od zemalja ima posebne carinske regulative za uvoz lekova. Za dodatne informacije i savete molimo Vas da kontaktirate korisnički servis putem e-mail adrese: [:][:en]FedEx serves more than 220 countries and territories, and each one of them has different import customs regulations for medicines. For any additional information please feel free to contact our Customer Service via e-mail [:]'
@@ -176,9 +176,9 @@
                     <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Rešenje (Saglasnost) za izvoz Ministarstva Zdravlja [:][:en]Export license/approval of Ministry of Health [:]'
                     )?><a href="http://www.zdravlje.gov.rs"> www.zdravlje.gov.rs</a>.</li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    <li><a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/commercial-invoice_faktura.pdf"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Profaktura/faktura[:][:en] is required.[:]'
-                    )?></li>
+                    )?></a></li>
                 </ul>
                 <p><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]Biološki materijal je uglavnom predmet zadržavanja na carini. Preporučujemo da pošiljku otpremite posredstvom neke od klinika u Srbiji koje imaju saradnju/ugovor sa klinikom u koju se uzorci šalju na ispitivanje.[:][:en]Biological material is mostly held by customs in many countries and requests formal entry. We recommend you to send your shipment through the clinic in Serbia that has contract/cooperation with clinic abroad, which is going to receive these samples for laboratory testing.[:]'
@@ -207,17 +207,19 @@
                     '[:rs]Dokumentacija neophodna za izvoz:[:][:en]Documentation requirements:[:]'
                 )?></p>
                 <ul>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    <li><a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/commercial-invoice_faktura.pdf"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Profaktura/Faktura[:][:en]Commercial Invoice[:]'
-                    )?></li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    )?></a></li>
+                    <li><a href="<?php bloginfo('template_url'); ?>/assets/documents/nalog-za-carinjenje.doc"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Nalog za carinjenje[:][:en]Customs Clearance order[:]'
-                    )?></li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    )?></a></li>
+                    <li><a href="<?php bloginfo('template_url'); ?>/assets/documents/isprava-o-zastupanju.doc"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Isprava o zastupanju[:][:en]Power of attorney[:]'
-                    )?></li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
-                        '[:rs]Izjava o vrsti baterije (isključivo litijum jonske ili litijum polimer baterije u/uz aparat. Prevoz baterija bez aparata nije prihvatljiv.)[:][:en]Battery statement (Li-ion and li-polymer batteries are acceptable and only in or beside appliance. Transportation of batteries without appliances is not acceptable.)[:]'
+                    )?></a></li>
+                    <li><a href="<?php bloginfo('template_url'); ?>/assets/documents/export/izjava-za-bateriju.doc"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                        '[:rs]Izjava o vrsti baterije[:][:en]Battery statement[:]'
+                    )?></a> <?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                        '[:rs](isključivo litijum jonske ili litijum polimer baterije u/uz aparat. Prevoz baterija bez aparata nije prihvatljiv.)[:][:en](Li-ion and li-polymer batteries are acceptable and only in or beside appliance. Transportation of batteries without appliances is not acceptable.)[:]'
                     )?></li>
                 </ul>
                 <p><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
@@ -291,15 +293,15 @@
                     '[:rs]Dokumentacija neophodna za izvoz:[:][:en]Documentation requirements:[:]'
                 )?></p>
                 <ul>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    <li><a target="_blank" href="<?php bloginfo('template_url'); ?>/assets/documents/export/commercial-invoice_faktura.pdf"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Profaktura/Faktura[:][:en]Commercial Invoice[:]'
-                    )?></li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    )?></a></li>
+                    <li><a href="<?php bloginfo('template_url'); ?>/assets/documents/nalog-za-carinjenje.doc"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Nalog za carinjenje[:][:en]Customs Clearance order[:]'
-                    )?></li>
-                    <li><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
+                    )?></a></li>
+                    <li><a href="<?php bloginfo('template_url'); ?>/assets/documents/isprava-o-zastupanju.doc"><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                         '[:rs]Isprava o zastupanju[:][:en]Power of attorney[:]'
-                    )?></li>
+                    )?></a></li>
                 </ul>
                 <p><?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]Za dodatne informacije i savete molimo Vas da kontaktirate korisnički servis putem e-mail adrese: [:][:en]For any additional information please feel free to contact our Customer Service via e-mail [:]'
@@ -327,7 +329,7 @@
                     )?></strong>
                 </div>
             </div>
-            <div class="countries-not-served col-md-9 col-12 d-flex align-items-center pt-7">
+            <div class="countries-not-served col-md-9 col-12 pt-7">
                 <div class="row">
                     <div class="col-md-3 col-12">
                         <p>Burma (MM)</p>
@@ -396,7 +398,7 @@
             <div class="modal-body">
                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/<?php echo qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage(
                     '[:rs]packaging[:][:en]packaging_eng[:]'
-                )?>.jpg" alt="">
+                )?>.png" alt="">
             </div>
         </div>
     </div>
